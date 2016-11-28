@@ -14,7 +14,12 @@ use SIAE\Report;
  * We create an report here with English variables
  *
  */
-$report = Report::start('DailyReport', ['name' => 'THIS IS NAME', 'eventCreatedAt' => 'INSERTED: 20150922']);
+$report = Report::start('DailyReport', [
+            'name'              => 'THIS IS NAME',
+            'eventCreatedAt'    => 'INSERTED: 20150922',
+            'Organisation_Name' => 'Organisation Name',
+            'Organisation_Event_Location_Names' => 'Location Name HERE',
+        ]);
 
 // Add a single line -> See DailyReportLine
 $report->addLine('Subscriptions',

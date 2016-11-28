@@ -7,7 +7,7 @@
         <SistemaEmissione>P0001091</SistemaEmissione>
     </Titolare>
     <Organizzatore>
-        <Denominazione>Rainbow Magicland Spa</Denominazione>
+        <Denominazione>%_ORGANIZZATORE_DENOMINAZIONE_%</Denominazione>
         <CodiceFiscale>03566320176</CodiceFiscale>
         <TipoOrganizzatore valore="G"/>
         <Evento>
@@ -16,7 +16,7 @@
                 <Incidenza>0</Incidenza>
             </Intrattenimento>
             <Locale>
-                <Denominazione>Rainbow Magicland</Denominazione>
+                <Denominazione>%_ORGANIZZATORE_EVENTO_LOCALE_DENOMINAZIONE_%</Denominazione>
                 <CodiceLocale>0581081135470</CodiceLocale>
             </Locale>
             <DataEvento>20150922</DataEvento>

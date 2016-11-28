@@ -21,6 +21,8 @@ class DailyReport extends Report
 
     protected $translatedProperties = [
         'DataGenerazione' => 'eventCreatedAt', // Creation time of the event (? translated correctly?)
+        'Organizzatore_Denominazione' => 'Organisation_Name',
+        'Organizzatore_Evento_Locale_Denominazione' => 'Organisation_Event_Location_Names',
     ];
 
     /**
