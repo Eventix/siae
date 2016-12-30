@@ -13,7 +13,7 @@ class Organizer
     private $classification;
     /** @SerializedName("CodiceFiscale") */
     private $fiscalCode;
-    /** @SerializedName("TipoGenere") */
+    /** @SerializedName("TipoOrganizzatore") */
     private $organizerType;
     /**
      * @XmlList(inline = true, entry="Evento")

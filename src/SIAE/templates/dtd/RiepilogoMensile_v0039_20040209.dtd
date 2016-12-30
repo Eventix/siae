@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+        <!ENTITY % text "(#PCDATA)">
+
+        <!ELEMENT RiepilogoMensile (Titolare, Organizzatore*)>
+        <!ATTLIST RiepilogoMensile Sostituzione (N | S) #REQUIRED Mese CDATA #REQUIRED DataGenerazione CDATA #REQUIRED OraGenerazione CDATA #REQUIRED ProgressivoGenerazione CDATA #REQUIRED>
+        <!ELEMENT Titolare (Denominazione, CodiceFiscale, SistemaEmissione)>
+        <!ELEMENT Organizzatore (Denominazione, CodiceFiscale, TipoOrganizzatore, Evento*, Abbonamenti*, AltriProventiGenerici*)>
+        <!ELEMENT Evento (Intrattenimento, Locale, DataEvento, OraEvento, MultiGenere+, OrdineDiPosto+, AltriProventiEvento*)>
+        <!ELEMENT Intrattenimento (TipoTassazione, Incidenza?, ImponibileIntrattenimenti?)>
+        <!ELEMENT Locale (Denominazione, CodiceLocale)>
+        <!ELEMENT MultiGenere (TipoGenere, IncidenzaGenere, TitoliOpere+)>
+        <!ELEMENT TitoliOpere (Titolo, ProduttoreCinema?, Autore?, Esecutore?, Nazionalita?, Distributore?)>
+        <!ELEMENT OrdineDiPosto (CodiceOrdine, Capienza, IVAEccedenteOmaggi, TitoliAccesso*, TitoliAnnullati*, TitoliAccessoIVAPreassolta*, TitoliIVAPreassoltaAnnullati*, BigliettiAbbonamento*, BigliettiAbbonamentoAnnullati*, AbbonamentiFissi*)>
+        <!ELEMENT TitoliAccesso (TipoTitolo, Quantita, CorrispettivoLordo, Prevendita, IVACorrispettivo, IVAPrevendita, ImportoPrestazione)>
+        <!ELEMENT TitoliAnnullati (TipoTitolo, Quantita, CorrispettivoLordo, Prevendita, IVACorrispettivo, IVAPrevendita, ImportoPrestazione)>
+        <!ELEMENT TitoliAccessoIVAPreassolta (TipoTitolo, Quantita, ImportoFigurativo, IVAFigurativa)>
+        <!ELEMENT TitoliIVAPreassoltaAnnullati (TipoTitolo, Quantita, ImportoFigurativo, IVAFigurativa)>
+        <!ELEMENT BigliettiAbbonamento (CodiceFiscale?, CodiceAbbonamento, TipoTitolo, Quantita, ImportoFigurativo, IVAFigurativa)>
+        <!ELEMENT BigliettiAbbonamentoAnnullati (CodiceFiscale?, CodiceAbbonamento, TipoTitolo, Quantita, ImportoFigurativo, IVAFigurativa)>
+        <!ELEMENT AbbonamentiFissi (CodiceFiscale?, CodiceAbbonamento, TipoTitolo, Quantita, ImportoFigurativo, IVAFigurativa)>
+        <!ELEMENT AltriProventiEvento (TipoProvento, CorrispettivoLordo, IVACorrispettivo)>
+        <!ELEMENT Abbonamenti (CodiceAbbonamento, Validita, TipoTassazione, Turno, CodiceOrdine, TipoTitolo, QuantitaEventiAbilitati, AbbonamentiEmessi?, AbbonamentiAnnullati?, AbbonamentiIVAPreassolta?, AbbonamentiIVAPreassoltaAnnullati?)>
+        <!ELEMENT AbbonamentiEmessi (Quantita, CorrispettivoLordo, Prevendita, IVACorrispettivo, IVAPrevendita)>
+        <!ELEMENT AbbonamentiAnnullati (Quantita, CorrispettivoLordo, Prevendita, IVACorrispettivo, IVAPrevendita)>
+        <!ELEMENT AbbonamentiIVAPreassolta (Quantita, ImportoFigurativo, IVAFigurativa)>
+        <!ELEMENT AbbonamentiIVAPreassoltaAnnullati (Quantita, ImportoFigurativo, IVAFigurativa)>
+        <!ELEMENT AltriProventiGenerici (TipoProvento, CorrispettivoLordo, IVACorrispettivo, GenerePrevalente)>
+
+        <!ELEMENT Autore %text;>
+        <!ELEMENT Capienza %text;>
+        <!ELEMENT CodiceAbbonamento %text;>
+        <!ELEMENT CodiceFiscale %text;>
+        <!ELEMENT CodiceLocale %text;>
+        <!ELEMENT CodiceOrdine %text;>
+        <!ELEMENT CorrispettivoLordo %text;>
+        <!ELEMENT DataEvento %text;>
+        <!ELEMENT Denominazione %text;>
+        <!ELEMENT Distributore %text;>
+        <!ELEMENT Esecutore %text;>
+        <!ELEMENT GenerePrevalente %text;>
+        <!ELEMENT ImponibileIntrattenimenti %text;>
+        <!ELEMENT ImportoFigurativo %text;>
+        <!ELEMENT ImportoPrestazione %text;>
+        <!ELEMENT Incidenza %text;>
+        <!ELEMENT IncidenzaGenere %text;>
+        <!ELEMENT IVACorrispettivo %text;>
+        <!ELEMENT IVAEccedenteOmaggi %text;>
+        <!ELEMENT IVAFigurativa %text;>
+        <!ELEMENT IVAPrevendita %text;>
+        <!ELEMENT Nazionalita %text;>
+        <!ELEMENT OraEvento %text;>
+        <!ELEMENT Prevendita %text;>
+        <!ELEMENT ProduttoreCinema %text;>
+        <!ELEMENT Quantita %text;>
+        <!ELEMENT QuantitaEventiAbilitati %text;>
+        <!ELEMENT SistemaEmissione %text;>
+        <!ELEMENT TipoGenere %text;>
+        <!ELEMENT TipoOrganizzatore EMPTY>
+        <!ATTLIST TipoOrganizzatore valore (E | P | G) "G">
+        <!ELEMENT TipoProvento %text;>
+        <!ELEMENT TipoTassazione EMPTY>
+        <!ATTLIST TipoTassazione valore (S | I) "S">
+        <!ELEMENT TipoTitolo %text;>
+        <!ELEMENT Titolo %text;>
+        <!ELEMENT Turno EMPTY>
+        <!ATTLIST Turno valore (F | L) #REQUIRED>
+        <!ELEMENT Validita %text;>

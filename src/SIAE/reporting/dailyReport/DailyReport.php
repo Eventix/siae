@@ -1,6 +1,6 @@
 <?php
 
-namespace SIAE\dailyReport;
+namespace SIAE\reporting\dailyReport;
 
 use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;

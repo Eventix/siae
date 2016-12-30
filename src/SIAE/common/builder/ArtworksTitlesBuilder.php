@@ -49,6 +49,36 @@ class ArtworksTitlesBuilder implements IBuilder
     }
 
     /**
+     * @param $distributor
+     * @return $this
+     */
+    public function distributor($distributor)
+    {
+        $this->artworksTitles->setDistributor($distributor);
+        return $this;
+    }
+
+    /**
+     * @param $nationality
+     * @return $this
+     */
+    public function nationality($nationality)
+    {
+        $this->artworksTitles->setNationality($nationality);
+        return $this;
+    }
+
+    /**
+     * @param $cinemaProducer
+     * @return $this
+     */
+    public function cinemaProducer($cinemaProducer)
+    {
+        $this->artworksTitles->setCinemaProducer($cinemaProducer);
+        return $this;
+    }
+
+    /**
      * @return ArtworksTitles
      */
     public function build()

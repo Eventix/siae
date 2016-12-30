@@ -5,13 +5,13 @@ require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Compos
 use SIAE\Report;
 
 /**
- * Initiate an report, here of the Type Daily Reports
+ * Initiate an reporting, here of the Type Daily Reports
  *
  * Report variables required are stated at DailyReport->$requiredProperties
  *
  * The translated variables are in DailyReport->$translatedProperties
  *
- * We create an report here with English variables
+ * We create an reporting here with English variables
  *
  */
 $report = Report::start('DailyReport', [

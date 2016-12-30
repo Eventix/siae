@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!ENTITY % text "(#PCDATA)">
+        <!ELEMENT RiepilogoControlloAccessi (Titolare, Evento+)>
+        <!ATTLIST RiepilogoControlloAccessi
+                Sostituzione (N | S) #REQUIRED>
+        <!ELEMENT Titolare (DenominazioneTitolareCA, CFTitolareCA, CodiceSistemaCA,
+                DataRiepilogo, DataGenerazioneRiepilogo, OraGenerazioneRiepilogo,
+                ProgressivoRiepilogo) >
+        <!ELEMENT Evento (CFOrganizzatore,DenominazioneOrganizzatore,
+                TipologiaOrganizzatore,SpettacoloIntrattenimento,IncidenzaIntrattenimento,
+                DenominazioneLocale,CodiceLocale, DataEvento, OraEvento, TipoGenere,
+                TitoloEvento,Autore, Esecutore, NazionalitaFilm,NumOpereRappresentate,
+                SistemaEmissione+) >
+        <!ELEMENT SistemaEmissione (CodiceSistemaEmissione, Titoli*, Abbonamenti*)>
+        <!ELEMENT Titoli (CodiceOrdinePosto, Capienza, TotaleTipoTitolo+)>
+        <!ELEMENT TotaleTipoTitolo (TipoTitolo, TotaleTitoliLTA,
+                TotaleTitoliNoAccessoTradiz, TotaleTitoliNoAccessoDigitali,
+                TotaleTitoliAutomatizzatiTradiz, TotaleTitoliAutomatizzatiDigitali,
+                TotaleTitoliManualiTradiz, TotaleTitoliManualiDigitali,
+                TotaleTitoliAnnullatiTradiz,TotaleTitoliAnnullatiDigitali,
+                TotaleTitoliDaspatiTradiz,TotaleTitoliDaspatiDigitali,
+                TotaleTitoliRubatiTradiz, TotaleTitoliRubatiDigitali,
+                TotaleTitoliBLTradiz ,TotaleTitoliBLDigitali) >
+        <!ELEMENT Abbonamenti (CodiceOrdinePosto, Capienza,
+                TotaleTipoTitoloAbbonamento+)>
+        <!ELEMENT TotaleTipoTitoloAbbonamento (TipoTitoloAbbonamento,TotaleTitoliAbbLTA,
+                TotaleTitoliAbbNoAccessoTradiz, TotaleTitoliAbbNoAccessoDigitali,
+                TotaleTitoliAbbAutomatizzatiTradiz, TotaleTitoliAbbAutomatizzatiDigitali,
+                TotaleTitoliAbbManualiTradiz, TotaleTitoliAbbManualiDigitali,
+                TotaleTitoliAbbAnnullatiTradiz, TotaleTitoliAbbAnnullatiDigitali,
+                TotaleTitoliAbbDaspatiTradiz, TotaleTitoliAbbDaspatiDigitali,
+                TotaleTitoliAbbRubatiTradiz, TotaleTitoliAbbRubatiDigitali,
+                TotaleTitoliAbbBLTradiz,TotaleTitoliAbbBLDigitali) >
+
+        <!ELEMENT CFTitolareCA (#PCDATA)>
+        <!ELEMENT DenominazioneTitolareCA (#PCDATA)>
+        <!ELEMENT CodiceSistemaCA (#PCDATA)>
+        <!ELEMENT DataRiepilogo (#PCDATA)>
+        <!ELEMENT DataGenerazioneRiepilogo (#PCDATA)>
+        <!ELEMENT OraGenerazioneRiepilogo (#PCDATA)>
+        <!ELEMENT ProgressivoRiepilogo (#PCDATA)>
+        <!ELEMENT CFOrganizzatore (#PCDATA)>
+        <!ELEMENT DenominazioneOrganizzatore (#PCDATA)>
+        <!ELEMENT TipologiaOrganizzatore (#PCDATA)>
+        <!ELEMENT SpettacoloIntrattenimento (#PCDATA)>
+        <!ELEMENT IncidenzaIntrattenimento (#PCDATA)>
+        <!ELEMENT DenominazioneLocale (#PCDATA)>
+        <!ELEMENT CodiceLocale (#PCDATA)>
+        <!ELEMENT DataEvento (#PCDATA)>
+        <!ELEMENT OraEvento (#PCDATA)>
+        <!ELEMENT TipoGenere (#PCDATA)>
+        <!ELEMENT TitoloEvento (#PCDATA)>
+        <!ELEMENT Autore (#PCDATA)>
+        <!ELEMENT Esecutore (#PCDATA)>
+        <!ELEMENT NazionalitaFilm (#PCDATA)>
+        <!ELEMENT NumOpereRappresentate (#PCDATA)>
+        <!ELEMENT CodiceSistemaEmissione (#PCDATA)>
+        <!ELEMENT CodiceOrdinePosto (#PCDATA)>
+        <!ELEMENT Capienza (#PCDATA)>
+        <!ELEMENT TipoTitolo (#PCDATA)>
+        <!ELEMENT TotaleTitoliLTA (#PCDATA)>
+        <!ELEMENT TotaleTitoliNoAccessoTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliNoAccessoDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliAutomatizzatiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAutomatizzatiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliManualiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliManualiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliAnnullatiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAnnullatiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliDaspatiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliDaspatiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliRubatiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliRubatiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliBLTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliBLDigitali (#PCDATA)>
+        <!ELEMENT TipoTitoloAbbonamento (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbLTA (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbNoAccessoTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbNoAccessoDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbAutomatizzatiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbAutomatizzatiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbManualiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbManualiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbAnnullatiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbAnnullatiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbDaspatiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbDaspatiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbRubatiTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbRubatiDigitali (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbBLTradiz (#PCDATA)>
+        <!ELEMENT TotaleTitoliAbbBLDigitali (#PCDATA)>

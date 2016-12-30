@@ -112,6 +112,52 @@
                 </TitoliAccesso>
             </OrdineDiPosto>
         </Evento>
-        %_LINES_ABBONAMENTI_%
+        <Abbonamenti>
+            <CodiceAbbonamento>%_CODICEABBONAMENTO_%</CodiceAbbonamento>
+            <Validita>20160901</Validita>
+            <TipoTassazione valore="S"/>
+            <Turno valore="L"/>
+            <CodiceOrdine>UN</CodiceOrdine>
+            <TipoTitolo>I1</TipoTitolo>
+            <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+            <AbbonamentiEmessi>
+                <Quantita>4</Quantita>
+                <CorrispettivoLordo>12000</CorrispettivoLordo>
+                <Prevendita>0</Prevendita>
+                <IVACorrispettivo>1092</IVACorrispettivo>
+                <IVAPrevendita>0</IVAPrevendita>
+            </AbbonamentiEmessi>
+            <AbbonamentiAnnullati>
+                <Quantita>1</Quantita>
+                <CorrispettivoLordo>3000</CorrispettivoLordo>
+                <Prevendita>0</Prevendita>
+                <IVACorrispettivo>273</IVACorrispettivo>
+                <IVAPrevendita>0</IVAPrevendita>
+            </AbbonamentiAnnullati>
+        </Abbonamenti>
     </Organizzatore>
+    <Abbonamenti>
+        <CodiceAbbonamento>%_CODICEABBONAMENTO_%</CodiceAbbonamento>
+        <Validita>20160901</Validita>
+        <TipoTassazione valore="S"/>
+        <Turno valore="L"/>
+        <CodiceOrdine>UN</CodiceOrdine>
+        <TipoTitolo>I1</TipoTitolo>
+        <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+        <AbbonamentiEmessi>
+            <Quantita>4</Quantita>
+            <CorrispettivoLordo>12000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>1092</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </AbbonamentiEmessi>
+        <AbbonamentiAnnullati>
+            <Quantita>1</Quantita>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </AbbonamentiAnnullati>
+    </Abbonamenti>
+
 </RiepilogoGiornaliero>

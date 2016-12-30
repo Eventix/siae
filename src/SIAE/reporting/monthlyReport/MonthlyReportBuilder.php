@@ -1,23 +1,35 @@
 <?php
 
-namespace SIAE\dailyReport;
+namespace SIAE\reporting\monthlyReport;
 
 use SIAE\common\builder\IBuilder;
 use SIAE\common\model\CompanyHolder;
 use SIAE\common\model\Organizer;
-use Symfony\Component\PropertyAccess\StringUtil;
 
 /**
  * Builder for the SIAE XML mapping.
  */
-class DailyReportBuilder implements IBuilder
+class MonthlyReportBuilder implements IBuilder
 {
-    private $dailyReport;
+    private $monthlyReport;
 
-
+    /**
+     * DailyReportBuilder constructor.
+     */
     public function __construct()
     {
-        $this->dailyReport = new DailyReport();
+        $this->monthlyReport = new MonthlyReport();
+    }
+
+
+    /**
+     * @param $month
+     * @return $this
+     */
+    public function month($month)
+    {
+        $this->monthlyReport->setMonth($month);
+        return $this;
     }
 
     /**
@@ -27,29 +39,18 @@ class DailyReportBuilder implements IBuilder
      */
     public function companyHolder($companyHolder)
     {
-        $this->dailyReport->setCompanyHolder($companyHolder);
+        $this->monthlyReport->setCompanyHolder($companyHolder);
         return $this;
     }
 
     /**
      * Pass in the array containing the organizer object.
-     * @param Organizer $organizer
+     * @param $organizer Organizer
      * @return $this;
      */
     public function organizer($organizer)
     {
-        $this->dailyReport->setOrganizer($organizer);
-        return $this;
-    }
-
-    /**
-     * Set the date for the parent element
-     * @param $date string
-     * @return $this
-     */
-    public function date($date)
-    {
-        $this->dailyReport->setDate($date);
+        $this->monthlyReport->setOrganizer($organizer);
         return $this;
     }
 
@@ -60,7 +61,7 @@ class DailyReportBuilder implements IBuilder
      */
     public function creationDate($date)
     {
-        $this->dailyReport->setCreationDate($date);
+        $this->monthlyReport->setCreationDate($date);
         return $this;
     }
 
@@ -71,7 +72,7 @@ class DailyReportBuilder implements IBuilder
      */
     public function generationTime($time)
     {
-        $this->dailyReport->setGenerationTime($time);
+        $this->monthlyReport->setGenerationTime($time);
         return $this;
     }
 
@@ -82,7 +83,7 @@ class DailyReportBuilder implements IBuilder
      */
     public function generationIncrementedNumber($number)
     {
-        $this->dailyReport->setGenerationIncrementedNumber($number);
+        $this->monthlyReport->setGenerationIncrementedNumber($number);
         return $this;
     }
 
@@ -93,15 +94,15 @@ class DailyReportBuilder implements IBuilder
      */
     public function replacement($replacement)
     {
-        $this->dailyReport->setReplacement($replacement);
+        $this->monthlyReport->setReplacement($replacement);
         return $this;
     }
 
     /**
-     * @return DailyReport
+     * @return MonthlyReport
      */
     public function build()
     {
-        return $this->dailyReport;
+        return $this->monthlyReport;
     }
 }

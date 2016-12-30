@@ -1,11 +1,12 @@
 <?php
 
+
 require_once "autoload.php";
 
 /**
  * Example
  */
-$dailyReportBuilder = new \SIAE\dailyReport\DailyReportBuilder();
+$monthlyReportBuilder = new \SIAE\reporting\monthlyReport\MonthlyReportBuilder();
 $companyHolderBuilder = new \SIAE\common\builder\CompanyHolderBuilder();
 $accessTitlesBuilder = new \SIAE\common\builder\AccessTitleBuilder();
 $organizerBuilder = new \SIAE\common\builder\OrganizerBuilder();
@@ -22,9 +23,12 @@ $nulledSubscriptionsBuilder = new \SIAE\common\builder\NulledSubscriptionsBuilde
 
 // Start creating the objects from most nested elements
 $artworkTitles = $artworkTitleBuilder
+    ->title("Rainbow Magicland")
+    ->cinemaProducer("A brand")
     ->author("Rainbow Magicland")
     ->executor("Rainbow Magicland")
-    ->title("Rainbow Magicland")
+    ->nationality("Dutch")
+    ->distributor("ManInc")
     ->build();
 
 
@@ -66,13 +70,13 @@ $entertainment = $entertainmentBuilder
     ->build();
 
 // Define one...M placeOrders
-$placeOrders = array(
+$placeOrders = [
     $placeOrderBuilder
         ->code("U2")
+        ->VATExceedingOffers(0)
         ->capacity(10000)
-        ->accessTitle($accessTitles)
         ->build()
-);
+];
 
 // Define one...M events
 $events = array(
@@ -102,18 +106,20 @@ $releasedSubscriptions = $releasedSubscriptionsBuilder
     ->VATpreSale(0)
     ->build();
 
-$nulledSubscriptions = $nulledSubscriptionsBuilder
-    ->quantity(1)
-    ->gross(3000)
-    ->preSale(0)
-    ->VATequivalent(273)
-    ->VATpreSale(0)
-    ->build();
+$nulledSubscriptions = [
+    $nulledSubscriptionsBuilder
+        ->quantity(1)
+        ->gross(3000)
+        ->preSale(0)
+        ->VATequivalent(273)
+        ->VATpreSale(0)
+        ->build()
+];
 
 $subscriptions = $subscriptionsBuilder
     ->code("CODICE ABBONAMENTO")
     ->validity(20160901)
-    ->taxationType("S")
+    ->taxationType("")
     ->turn("L")
     ->orderCode("UN")
     ->titleType("I1")
@@ -123,7 +129,8 @@ $subscriptions = $subscriptionsBuilder
     ->build();
 
 $organizer = $organizerBuilder
-    ->organizerType("ARTA COM SRL")
+    ->classification("SALE")
+    ->organizerType("E")
     ->fiscalCode("03566320176")
     ->events($events)
     ->subscriptions($subscriptions)
@@ -135,10 +142,10 @@ $companyHolder = $companyHolderBuilder
     ->fiscalCode("dsadsa")
     ->build();
 
-$dailyReport = $dailyReportBuilder
+$monthlyReport = $monthlyReportBuilder
+    ->month(201509)
     ->companyHolder($companyHolder)
     ->organizer($organizer)
-    ->date("14213")
     ->generationIncrementedNumber("2")
     ->generationTime("150057")
     ->creationDate("124145")
@@ -149,7 +156,16 @@ $dailyReport = $dailyReportBuilder
 $serializer = JMS\Serializer\SerializerBuilder::create()->build();
 
 // Show
-echo $serializer->serialize($dailyReport, 'xml');
+$serializedXML = $serializer->serialize($monthlyReport, 'xml');
+echo $serializedXML;
 
+// Test to try it with the provided sample files
+// - unfortunately it also fails
+//$serializedXML = file_get_contents("templates/RMG_2015_09_00_001.xml");
+
+
+// Validate against DTD
+$monthlyReportValidator = new \SIAE\validator\MonthlyReportValidator();
+echo $monthlyReportValidator->validate($serializedXML);
 
 ?>

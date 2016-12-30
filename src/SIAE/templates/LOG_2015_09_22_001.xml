@@ -1,0 +1,514 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LogTransazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="2849F0A492D3C512"
+                 DataEmissione="20150922" OraEmissione="1425" NumeroProgressivo="235" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1500</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>136</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="5AA77D3CF84D9360"
+                 DataEmissione="20150922" OraEmissione="1425" NumeroProgressivo="236" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1500</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>136</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="C7C597865F6DD015"
+                 DataEmissione="20150922" OraEmissione="1425" NumeroProgressivo="237" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1500</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>136</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="C9627ED336D03293"
+                 DataEmissione="20150922" OraEmissione="1425" NumeroProgressivo="238" TipoTitolo="R1" CodiceOrdine="U2"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>800</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>73</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="01A49C31958EC353"
+                 DataEmissione="20150922" OraEmissione="1425" NumeroProgressivo="239" TipoTitolo="R1" CodiceOrdine="U2"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>800</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>73</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="6B1E8B51F983A071"
+                 DataEmissione="20150922" OraEmissione="1425" NumeroProgressivo="240" TipoTitolo="R1" CodiceOrdine="U2"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>800</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>73</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="899F7D520EAD7875"
+                 DataEmissione="20150922" OraEmissione="1425" NumeroProgressivo="241" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1500</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>136</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150923</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="BDC202E500F4C5CD"
+                 DataEmissione="20150922" OraEmissione="1425" NumeroProgressivo="242" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1500</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>136</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150923</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="F09B178730F8483E"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="243" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1500</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>136</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150923</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="E810B9254F71EBE1"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="244" TipoTitolo="I1" CodiceOrdine="U2"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1200</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>109</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150923</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="2A0C4CE94CFCE680"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="245" TipoTitolo="I1" CodiceOrdine="U2"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1200</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>109</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150923</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="A272A31D402093B5"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="246" TipoTitolo="I1" CodiceOrdine="U2"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <TitoloAccesso Annullamento="N">
+            <CorrispettivoLordo>1200</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>109</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150923</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+        </TitoloAccesso>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="06894AB9D9CB241D"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="247" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0005UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>1</ProgressivoAbbonamento>
+            <Turno valore="F"/>
+            <QuantitaEventiAbilitati>3</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>1000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>91</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="5A0B1C95AA5A269B"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="248" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0005UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>2</ProgressivoAbbonamento>
+            <Turno valore="F"/>
+            <QuantitaEventiAbilitati>3</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>1000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>91</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="9ABDEBA8C904C541"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="249" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0005UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>3</ProgressivoAbbonamento>
+            <Turno valore="F"/>
+            <QuantitaEventiAbilitati>3</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>1000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>91</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="2CA47BC4A3DD8C62"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="254" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0004UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>5</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>3</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>1000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>91</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="7E1AD3FAFE538DF7"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="255" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0004UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>6</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>3</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>1000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>91</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="00963B827DBFF0B4"
+                 DataEmissione="20150922" OraEmissione="1426" NumeroProgressivo="256" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0004UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>7</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>3</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>1000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>91</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="89F0C94EACAF42CC"
+                 DataEmissione="20150922" OraEmissione="1427" NumeroProgressivo="257" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0003UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>5</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>3000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>273</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="F743F8B64D1BE3D9"
+                 DataEmissione="20150922" OraEmissione="1427" NumeroProgressivo="258" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0003UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>6</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>3000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>273</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="F2B38BAF6CA386F5"
+                 DataEmissione="20150922" OraEmissione="1427" NumeroProgressivo="259" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0003UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>7</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>3000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>273</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="9CBC0AA3C20003B6"
+                 DataEmissione="20150922" OraEmissione="1427" NumeroProgressivo="260" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0">
+        <Abbonamento Annullamento="N">
+            <CodiceAbbonamento>0003UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>8</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>3000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>273</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="B" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="275E1455509755C0"
+                 DataEmissione="20150922" OraEmissione="1429" NumeroProgressivo="261" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="C.ACCESSI" ImponibileIntrattenimenti="0">
+        <BigliettoAbbonamento Annullamento="N">
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+            <CodiceAbbonamento>0004UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>7</ProgressivoAbbonamento>
+            <CodiceFiscale>03566320176</CodiceFiscale>
+            <ImportoFigurativo>1000</ImportoFigurativo>
+            <IVAFigurativa>91</IVAFigurativa>
+        </BigliettoAbbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="B" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="E0ABBCA13E757107"
+                 DataEmissione="20150922" OraEmissione="1429" NumeroProgressivo="262" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="C.ACCESSI" ImponibileIntrattenimenti="0">
+        <BigliettoAbbonamento Annullamento="N">
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+            <CodiceAbbonamento>0003UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>8</ProgressivoAbbonamento>
+            <CodiceFiscale>03566320176</CodiceFiscale>
+            <ImportoFigurativo>3000</ImportoFigurativo>
+            <IVAFigurativa>273</IVAFigurativa>
+        </BigliettoAbbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="DE2377D9DBA8C584"
+                 DataEmissione="20150922" OraEmissione="1435" NumeroProgressivo="263" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0" OriginaleAnnullato="249"
+                 CartaOriginaleAnnullato="A0104726" CausaleAnnullamento="001">
+        <Abbonamento Annullamento="S">
+            <CodiceAbbonamento>0005UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>3</ProgressivoAbbonamento>
+            <Turno valore="F"/>
+            <QuantitaEventiAbilitati>3</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>1000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>91</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="A4EABADBE1F99543"
+                 DataEmissione="20150922" OraEmissione="1436" NumeroProgressivo="264" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0" OriginaleAnnullato="255"
+                 CartaOriginaleAnnullato="A0104726" CausaleAnnullamento="001">
+        <Abbonamento Annullamento="S">
+            <CodiceAbbonamento>0004UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>6</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>3</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>1000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>91</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="N" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="0BEB2551ED18EE52"
+                 DataEmissione="20150922" OraEmissione="1437" NumeroProgressivo="265" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="zucchetti1" ImponibileIntrattenimenti="0" OriginaleAnnullato="259"
+                 CartaOriginaleAnnullato="A0104726" CausaleAnnullamento="001">
+        <Abbonamento Annullamento="S">
+            <CodiceAbbonamento>0003UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>7</ProgressivoAbbonamento>
+            <Turno valore="L"/>
+            <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+            <Validita>20160901</Validita>
+            <Rateo>3000</Rateo>
+            <RateoIntrattenimenti>0</RateoIntrattenimenti>
+            <RateoIVA>273</RateoIVA>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </Abbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="B" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="6A070B19C4F4C2F1"
+                 DataEmissione="20150922" OraEmissione="1439" NumeroProgressivo="266" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="C.ACCESSI" ImponibileIntrattenimenti="0">
+        <BigliettoAbbonamento Annullamento="N">
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+            <CodiceAbbonamento>0003UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>6</ProgressivoAbbonamento>
+            <CodiceFiscale>03566320176</CodiceFiscale>
+            <ImportoFigurativo>3000</ImportoFigurativo>
+            <IVAFigurativa>273</IVAFigurativa>
+        </BigliettoAbbonamento>
+    </Transazione>
+    <Transazione CFOrganizzatore="03566320176" CFTitolare="02014780395" IVAPreassolta="B" TipoTassazione="S" Valuta="E"
+                 SistemaEmissione="P0001091" CartaAttivazione="A0104726" SigilloFiscale="4B700AEECACEE6F5"
+                 DataEmissione="20150922" OraEmissione="1449" NumeroProgressivo="267" TipoTitolo="I1" CodiceOrdine="UN"
+                 Posto="UNICO" PuntoVendita="C.ACCESSI" ImponibileIntrattenimenti="0">
+        <BigliettoAbbonamento Annullamento="N">
+            <CodiceLocale>0581081135470</CodiceLocale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <TipoGenere>77</TipoGenere>
+            <Titolo>Rainbow Magicland</Titolo>
+            <CodiceAbbonamento>0004UNI1</CodiceAbbonamento>
+            <ProgressivoAbbonamento>4</ProgressivoAbbonamento>
+            <CodiceFiscale>03566320176</CodiceFiscale>
+            <ImportoFigurativo>1000</ImportoFigurativo>
+            <IVAFigurativa>91</IVAFigurativa>
+        </BigliettoAbbonamento>
+    </Transazione>
+</LogTransazione>

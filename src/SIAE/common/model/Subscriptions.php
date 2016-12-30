@@ -4,6 +4,7 @@ namespace SIAE\common\model;
 
 use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
+use JMS\Serializer\Annotation\XmlAttribute;
 
 /** @XmlRoot("Abbonamenti") */
 class Subscriptions
@@ -12,7 +13,7 @@ class Subscriptions
     private $code;
     /** @SerializedName("Validita") */
     private $validity;
-    /** @SerializedName("TipoTassazione") */
+    /**@SerializedName("TipoTassazione") */
     private $taxationType;
     /** @SerializedName("Turno") */
     private $turn;

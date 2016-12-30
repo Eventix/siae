@@ -19,6 +19,11 @@ class PlaceOrder
     private $seasonTicket;
 
     /**
+     * @SerializedName("IVAEccedenteOmaggi")
+     */
+    private $VATExceedingOffers;
+
+    /**
      * @return mixed
      */
     public function getCode()
@@ -96,5 +101,21 @@ class PlaceOrder
     public function setSubscriptionTicket($subscriptionTicket)
     {
         $this->subscriptionTicket = $subscriptionTicket;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getVATExceedingOffers()
+    {
+        return $this->VATExceedingOffers;
+    }
+
+    /**
+     * @param mixed $VATExceedingOffers
+     */
+    public function setVATExceedingOffers($VATExceedingOffers)
+    {
+        $this->VATExceedingOffers = $VATExceedingOffers;
     }
 }

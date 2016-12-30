@@ -53,7 +53,18 @@ class PlaceOrderBuilder implements IBuilder
      */
     public function subscriptionTicket($subscriptionTicket)
     {
-        $this->subscriptionTicket = $subscriptionTicket;
+        $this->placeOrder->setSubscriptionTicket($subscriptionTicket);
+        return $this;
+    }
+
+    /**
+     * @param $VATExceedingOffers
+     * @return $this
+     */
+    public function VATExceedingOffers($VATExceedingOffers)
+    {
+        $this->placeOrder->setVATExceedingOffers($VATExceedingOffers);
+        return $this;
     }
 
 

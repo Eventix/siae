@@ -1,5 +1,5 @@
 <?php
-namespace SIAE\monthlyReport;
+namespace SIAE\reporting\monthlyReport;
 
 use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
@@ -7,58 +7,56 @@ use JMS\Serializer\Annotation\XmlAttribute;
 use SIAE\common\model\CompanyHolder;
 use SIAE\common\model\Organizer;
 
-/**
- * Root file.
- */
+
 
 /** @XmlRoot("RiepilogoMensile") */
 class MonthlyReport
 {
+
+    /**
+     * @var int
+     * @SerializedName("Mese")
+     * @XmlAttribute
+     */
+    private $month;
+
     /**
      * @var CompanyHolder
+     * @SerializedName("Titolare")
      */
     private $companyHolder;
+
     /**
      * @var Organizer
+     * * @SerializedName("Organizzatore")
      */
     private $organizer;
 
-    /** @XmlAttribute
-     * @SerializedName("data")
-     */
-    private $date;
-    /** @XmlAttribute
+
+    /**
+     * @XmlAttribute
      * @SerializedName("DataGenerazione")
      */
     private $creationDate;
-    /** @XmlAttribute
-     * @SerializedName("oraGenerazione")
+
+    /**
+     * @XmlAttribute
+     * @SerializedName("OraGenerazione")
      */
     private $generationTime;
-    /** @XmlAttribute
+
+    /**
+     * @XmlAttribute
      * @SerializedName("ProgressivoGenerazione")
      */
     private $generationIncrementedNumber;
-    /** @XmlAttribute
+
+    /**
+     * @XmlAttribute
      * @SerializedName("Sostituzione")
      */
     private $replacement;
 
-    /**
-     * @return mixed
-     */
-    public function getDate()
-    {
-        return $this->date;
-    }
-
-    /**
-     * @param mixed $date
-     */
-    public function setDate($date)
-    {
-        $this->date = $date;
-    }
 
     /**
      * @return mixed
@@ -154,6 +152,22 @@ class MonthlyReport
     public function setOrganizer($organizer)
     {
         $this->organizer = $organizer;
+    }
+
+    /**
+     * @return int
+     */
+    public function getMonth()
+    {
+        return $this->month;
+    }
+
+    /**
+     * @param int $month
+     */
+    public function setMonth($month)
+    {
+        $this->month = $month;
     }
 
 }

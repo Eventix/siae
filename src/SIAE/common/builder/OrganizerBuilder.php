@@ -42,6 +42,7 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
+     * Organizer type must be E , P or G.
      * @param String $organizerType
      * @return OrganizerBuilder
      */
@@ -72,7 +73,6 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
-     * @return Object returns the newly built object
      * @return Organizer
      */
     public function build()
