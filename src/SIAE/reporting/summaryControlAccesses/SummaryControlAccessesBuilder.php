@@ -5,6 +5,10 @@ namespace SIAE\reporting\summaryControlAccesses;
 
 use SIAE\common\builder\IBuilder;
 
+
+/**
+ * Builder for the SIAE XML mapping.
+ */
 class SummaryControlAccessesBuilder implements IBuilder
 {
     /**

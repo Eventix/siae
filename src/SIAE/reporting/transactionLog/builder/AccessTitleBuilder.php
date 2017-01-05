@@ -2,9 +2,6 @@
 
 namespace SIAE\reporting\transactionLog\builder;
 
-use JMS\Serializer\Annotation\XmlRoot;
-use JMS\Serializer\Annotation\SerializedName;
-use JMS\Serializer\Annotation\XmlAttribute;
 use SIAE\reporting\transactionLog\model\AccessTitle;
 
 class AccessTitleBuilder

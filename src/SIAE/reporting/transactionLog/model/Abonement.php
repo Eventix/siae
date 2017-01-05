@@ -1,12 +1,9 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: lore
- * Date: 2-1-17
- * Time: 19:47
- */
 
 namespace SIAE\reporting\transactionLog\model;
+
+use JMS\Serializer\Annotation\XmlRoot;
+use JMS\Serializer\Annotation\SerializedName;
 
 use SIAE\common\model\Turn;
 

@@ -3,6 +3,9 @@
 
 namespace SIAE\reporting\transactionLogs;
 
+use JMS\Serializer\Annotation\XmlRoot;
+use JMS\Serializer\Annotation\XmlList;
+
 /** @XmlRoot("LogTransazione") */
 class TransactionLog
 {

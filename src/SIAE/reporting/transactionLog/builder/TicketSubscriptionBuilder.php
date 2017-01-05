@@ -3,8 +3,6 @@
 namespace SIAE\reporting\transactionLog\builder;
 
 
-use JMS\Serializer\Annotation\XmlRoot;
-use JMS\Serializer\Annotation\SerializedName;
 use SIAE\common\builder\IBuilder;
 use SIAE\reporting\transactionLog\model\TicketSubscription;
 

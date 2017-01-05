@@ -3,6 +3,8 @@
 namespace SIAE\reporting\transactionLog\model;
 
 use SIAE\reporting\dailyTransactionLogs\model\AccessTitle;
+use JMS\Serializer\Annotation\XmlRoot;
+use JMS\Serializer\Annotation\SerializedName;
 
 /** @XmlRoot("Transazione") */
 class Transaction
