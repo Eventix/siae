@@ -54,6 +54,7 @@ class DailyReport
     }
 
     /**
+     * The format is YYYYMMDD.
      * @param mixed $date
      */
     public function setDate($date)

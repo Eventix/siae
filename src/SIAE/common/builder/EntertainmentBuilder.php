@@ -30,6 +30,8 @@ class EntertainmentBuilder implements IBuilder
     }
 
     /**
+     * Percentage stating the relationship
+     * between entertainment and show.
      * @param Integer $incidence
      * @return EntertainmentBuilder
      */

@@ -192,6 +192,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * The format is YYYYMMDD.
      * @param $nulledDate
      * @return $this
      */
@@ -202,6 +203,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * The format is HHMM.
      * @param $nulledHour
      * @return $this
      */
@@ -222,6 +224,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Nulled progressive number of the title or abonement.
      * @param $nulledProgressiveFiscalCode
      * @return $this
      */
@@ -265,7 +268,23 @@ class AccessTitleBuilder implements IBuilder
 
 
     /**
-     * @param $state
+     * State title. The values allowed are the followings:
+     * VT = Valid (titolo tradizionale)
+     * VD = Valid (titolo digitale)
+     * ZT = Accesso automatizz. tit. tradizionale
+     * ZD = Accesso automatizzato digitale
+     * MT = Accesso Manuale tit. tradizionale
+     * MD = Accesso Manuale tit. digitale
+     * DT = Daspato tit. tradizionale
+     * DD = Daspato tit. digitale
+     * FT = Denuncia furto per tit. tradizionale
+     * FD = Denuncia furto per tit. digitale
+     * AT = Annullato tit. tradizionale
+     * AD = Annullato tit. digitale
+     * BT = Black List a disposizione dell’organizzatore per tit.
+     * tradizionali
+     * BD = Black list a disposizione dell’organizzatore per tit. digitali
+     * @param $state string
      * @return $this
      */
     public function state($state)
@@ -275,6 +294,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * The format is HHMMSS.
      * @param $intakeTime
      * @return $this
      */

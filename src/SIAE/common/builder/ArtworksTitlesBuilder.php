@@ -39,6 +39,7 @@ class ArtworksTitlesBuilder implements IBuilder
     }
 
     /**
+     * Name of the band, artist or orchestra.
      * @param mixed $executor
      * @return ArtworksTitlesBuilder
      */

@@ -148,12 +148,12 @@ class EventBuilder implements IBuilder
     }
 
     /**
-     * @param $executor
+     * @param string $performer
      * @return $this
      */
-    public function executor($executor)
+    public function performer($performer)
     {
-        $this->event->setExecutor($executor);
+        $this->event->setPerformer($performer);
         return $this;
     }
 

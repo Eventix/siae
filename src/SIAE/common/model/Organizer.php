@@ -63,6 +63,8 @@ class Organizer
     }
 
     /**
+     * Only for the cinema.
+     * Allowed values: E (essay), P (related to church), G (generic).
      * @param String $organizerType
      */
     public function setOrganizerType($organizerType)

@@ -36,7 +36,9 @@ class Transaction
      */
     private $taxationType;
     /**
-     * Allowed values are E (euro) or L (lire)
+     * Allowed values are E (euro) or L (lire).
+     * The euro currency must contain the last two cyphers representing the
+     * euro cents.
      * @XmlAttribute
      * @SerializedName("Valuta")
      * @var string

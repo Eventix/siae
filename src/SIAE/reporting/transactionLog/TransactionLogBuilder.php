@@ -3,7 +3,7 @@
 namespace SIAE\reporting\transactionLogs;
 
 /**
- * Builder for the SIAE XML mapping.
+ * Builder for the LTA SIAE XML mapping.
  */
 class TransactionLogBuilder
 {

@@ -95,7 +95,8 @@ class LTAEvent
     }
 
     /**
-     * @param mixed $localCode
+     * Provided by SIAE.
+     * @param string $localCode
      */
     public function setLocalCode($localCode)
     {
@@ -175,7 +176,8 @@ class LTAEvent
     }
 
     /**
-     * @param mixed $openingDate
+     * The format is YYYYMMDD
+     * @param int $openingDate
      */
     public function setOpeningDate($openingDate)
     {
@@ -192,7 +194,8 @@ class LTAEvent
     }
 
     /**
-     * @param mixed $openingHour
+     * The format is HHMMSS
+     * @param int $openingHour
      */
     public function setOpeningHour($openingHour)
     {

@@ -453,6 +453,7 @@ class AccessTitle
     }
 
     /**
+     * The format is YYYYMMDD.
      * @param mixed $nulledDate
      */
     public function setNulledDate($nulledDate)
@@ -469,6 +470,7 @@ class AccessTitle
     }
 
     /**
+     * The format is HHMM.
      * @param mixed $nulledHour
      */
     public function setNulledHour($nulledHour)
@@ -533,7 +535,17 @@ class AccessTitle
     }
 
     /**
-     * @param mixed $supportCode
+     * Possible parameters are:
+     * BT Biglietto Tradizionale
+     * CE Cellulare
+     * CC Carta di Credito
+     * CI Carta d’Identità
+     * DD Documento digitale
+     * FI Carta fidelizzazione
+     * TC Tessera Servizi Comunale
+     * TF Tessera del tifoso
+     * TS Tessera sanitaria
+     * @param string $supportCode
      */
     public function setSupportCode($supportCode)
     {
@@ -581,6 +593,7 @@ class AccessTitle
     }
 
     /**
+     * The format is HHMMSS.
      * @param mixed $intakeTime
      */
     public function setIntakeTime($intakeTime)

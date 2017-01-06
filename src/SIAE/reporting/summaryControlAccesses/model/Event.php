@@ -77,7 +77,7 @@ class Event
      * @SerializedName("Esecutore")
      * @var string
      */
-    private $executor;
+    private $performer;
     /**
      * @SerializedName("NazionalitaFilm")
      * @var string
@@ -247,6 +247,8 @@ class Event
     }
 
     /**
+     * Included in Tab. 1 provv. AE 23/7/2001
+     * EG: Cinema, teatro, sport, mostra, concerto
      * @param string $genreType
      */
     public function setGenreType($genreType)
@@ -289,17 +291,17 @@ class Event
     /**
      * @return string
      */
-    public function getExecutor()
+    public function getPerformer()
     {
-        return $this->executor;
+        return $this->performer;
     }
 
     /**
-     * @param string $executor
+     * @param string $performer
      */
-    public function setExecutor($executor)
+    public function setPerformer($performer)
     {
-        $this->executor = $executor;
+        $this->performer = $performer;
     }
 
     /**

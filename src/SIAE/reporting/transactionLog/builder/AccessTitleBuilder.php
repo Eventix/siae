@@ -38,6 +38,7 @@ class AccessTitleBuilder
     }
 
     /**
+     * Provided by SIAE.
      * @param $localCode
      * @return $this
      */

@@ -18,6 +18,8 @@ class TotalTypeTitleBuilder implements IBuilder
 
 
     /**
+     * Total of the titles inserted in LTA.
+     * (VT+VD+ZT+ZD+MT+MD+AT+AD+DT+DD+FT+FD+BT+BD)
      * @param $totalTitleLTA int
      * @return $this
      */

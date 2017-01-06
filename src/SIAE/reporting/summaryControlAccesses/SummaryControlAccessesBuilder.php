@@ -7,7 +7,7 @@ use SIAE\common\builder\IBuilder;
 
 
 /**
- * Builder for the SIAE XML mapping.
+ * Builder for the RCA SIAE XML mapping.
  */
 class SummaryControlAccessesBuilder implements IBuilder
 {

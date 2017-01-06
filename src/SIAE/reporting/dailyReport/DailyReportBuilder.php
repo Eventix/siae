@@ -42,7 +42,7 @@ class DailyReportBuilder implements IBuilder
     }
 
     /**
-     * Set the date for the parent element
+     * The format is YYYYMMDD.
      * @param $date string
      * @return $this
      */

@@ -32,6 +32,7 @@ class LTAEventBuilder implements IBuilder
     }
 
     /**
+     * Provided by SIAE.
      * @param $localCode
      * @return $this
      */
@@ -87,6 +88,7 @@ class LTAEventBuilder implements IBuilder
     }
 
     /**
+     * The format is YYYYMMDD.
      * @param $openingDate
      * @return $this
      */
@@ -98,6 +100,7 @@ class LTAEventBuilder implements IBuilder
     }
 
     /**
+     * The format is HHMMSS
      * @param $openingHour
      * @return $this
      */

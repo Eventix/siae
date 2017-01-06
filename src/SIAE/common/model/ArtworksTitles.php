@@ -62,6 +62,7 @@ class ArtworksTitles
     }
 
     /**
+     * Name of the band, artist or orchestra.
      * @param mixed $executor
      */
     public function setExecutor($executor)

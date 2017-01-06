@@ -84,6 +84,7 @@ class AccessTitle
     }
 
     /**
+     * Provided by SIAE.
      * @param mixed $localCode
      */
     public function setLocalCode($localCode)
