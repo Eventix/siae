@@ -19,7 +19,11 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
-     * @param mixed $gross
+     * Name of the Owner
+     * Company -> Name of the Company
+     * Organizer -> Name of the Organizer
+     *
+     * @param mixed $classification
      * @return CompanyHolderBuilder
      */
     public function classification($classification)
@@ -29,7 +33,7 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
-     * @param mixed $preSale
+     * @param mixed $fiscalCode
      * @return CompanyHolderBuilder
      */
     public function fiscalCode($fiscalCode)
@@ -39,7 +43,9 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
-     * @param mixed $VATequivalent
+     * SIAE Code from the issueing Ticketing Company
+     *
+     * @param mixed $distributedSystem
      * @return CompanyHolderBuilder
      */
     public function distributionSystem($distributedSystem)

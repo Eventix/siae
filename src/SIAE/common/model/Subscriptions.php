@@ -133,6 +133,8 @@ class Subscriptions
     }
 
     /**
+     * Number of events involved in a single Subscription/Order
+     *
      * @param mixed $amountOfValidatedEvent
      */
     public function setAmountOfValidatedEvent($amountOfValidatedEvent)

@@ -97,6 +97,9 @@ class Organizer
     }
 
     /**
+     * Subscriptions are a set of information on
+     *
+     *
      * @param mixed $subscriptions
      */
     public function setSubscriptions($subscriptions)

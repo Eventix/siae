@@ -87,6 +87,7 @@ class DailyReportBuilder implements IBuilder
 
     /**
      * Set the replacement value
+     * Can be S or N,
      * @param $replacement string
      * @return $this
      */

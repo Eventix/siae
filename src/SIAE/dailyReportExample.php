@@ -115,39 +115,39 @@ $nulledSubscriptions = $nulledSubscriptionsBuilder
 
 $subscriptions = [
     $subscriptionsBuilder
-        ->code("CODICE ABBONAMENTO")
-        ->validity(20160901)
-        ->taxationType("")
-        ->turn("L")
-        ->orderCode("UN")
-        ->titleType("I1")
-        ->amountOfValidatedEvent(1)
-        ->releasedSubscriptions($releasedSubscriptions)
-        ->nulledSubscriptions($nulledSubscriptions)
+        ->code("CODICE ABBONAMENTO") // Code for the Subscription Type (type of Abbo)
+        ->validity(20160901) // Clear
+        ->taxationType("") // TODO: Add explanation
+        ->turn("F") // TODO: Explain so that its clear for Chris :)
+        ->orderCode("UN") // Clear
+        ->titleType("I1") // Clear
+        ->amountOfValidatedEvent(1) // clear
+        ->releasedSubscriptions($releasedSubscriptions) // TODO: Released is issued
+        ->nulledSubscriptions($nulledSubscriptions) // TODO: nulled is refunded / cancelled.
         ->build()];
 
 $organizer = $organizerBuilder
-    ->classification("SALE")
-    ->organizerType("E")
-    ->fiscalCode("03566320176")
+    ->classification("SALE") // TODO: rename classification to denomiation (name)
+    ->organizerType("E") // Clear, only need for Cinema
+    ->fiscalCode("03566320176") // clear
     ->events($events)
     ->subscriptions($subscriptions)
     ->build();
 
 $companyHolder = $companyHolderBuilder
-    ->classification("Sample")
-    ->distributionSystem("Sample")
-    ->fiscalCode("dsadsa")
+    ->classification("Sample") // Clear
+    ->distributionSystem("Sample") // Clear
+    ->fiscalCode("dsadsa") // Clear
     ->build();
 
 $dailyReport = $dailyReportBuilder
-    ->companyHolder($companyHolder)
-    ->organizer($organizer)
-    ->date("14213")
-    ->generationIncrementedNumber("2")
-    ->generationTime("150057")
-    ->creationDate("124145")
-    ->replacement("N")
+    ->companyHolder($companyHolder) // Clear
+    ->organizer($organizer) // Clear
+    ->date("14213") // Clear
+    ->generationIncrementedNumber("2") // Clear
+    ->generationTime("150057") // Clear
+    ->creationDate("124145") // clear
+    ->replacement("N") // TODO: Asked
     ->build();
 
 // JMS init
