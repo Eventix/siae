@@ -42,7 +42,9 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
+     * Only for the cinema.
      * Organizer type must be E , P or G.
+     * Allowed values: E (essay), P (related to church), G (generic).
      * @param String $organizerType
      * @return OrganizerBuilder
      */

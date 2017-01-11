@@ -40,6 +40,7 @@ class DailyReport
      * @SerializedName("ProgressivoGenerazione")
      */
     private $generationIncrementedNumber;
+
     /** @XmlAttribute
      * @SerializedName("Sostituzione")
      */
