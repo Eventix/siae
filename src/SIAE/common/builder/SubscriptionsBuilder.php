@@ -61,6 +61,7 @@ class SubscriptionsBuilder implements IBuilder
     }
 
     /**
+     * For the cases for where the person would sit.
      * @param mixed $orderCode
      * @return $this SubscriptionsBuilders
      */
@@ -71,6 +72,11 @@ class SubscriptionsBuilder implements IBuilder
     }
 
     /**
+     * Allowed values:
+     * I1 - Intero
+     * MC - Meseum Card
+     * TC - Tourist Card
+     * Find out more in the TAB 3.
      * @param mixed $titleType
      * @return $this SubscriptionsBuilders
      */

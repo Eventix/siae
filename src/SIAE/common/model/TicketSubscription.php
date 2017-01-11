@@ -63,6 +63,7 @@ class TicketSubscription
     }
 
     /**
+     * Title type.
      * @param mixed $titleType
      */
     public function setTitleType($titleType)

@@ -36,6 +36,7 @@ class DailyTransactionLogBuilder implements IBuilder
     }
 
     /**
+     * System CA code.
      * @param $CASystem
      * @return $this
      */
@@ -46,6 +47,7 @@ class DailyTransactionLogBuilder implements IBuilder
     }
 
     /**
+     * Fiscal code of the system Owner
      * @param $CACFOwner
      * @return $this
      */
@@ -56,6 +58,7 @@ class DailyTransactionLogBuilder implements IBuilder
     }
 
     /**
+     * Format is YYYYMMDD.
      * @param $transactionLogDate
      * @return $this
      */

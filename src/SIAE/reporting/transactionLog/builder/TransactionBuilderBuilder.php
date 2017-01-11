@@ -21,6 +21,7 @@ class TransactionBuilder implements IBuilder
 
 
     /**
+     * Fiscal code of the person who owns the control system.
      * @param $CFOrganizer
      * @return $this
      */
@@ -50,6 +51,7 @@ class TransactionBuilder implements IBuilder
 
 
     /**
+     * Accepted values are I (entertainment) or S (of only show)
      * @param $taxationType
      * @return $this
      */
@@ -60,6 +62,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Accepted values are E (euro) or L (lire).
      * @param $currency
      * @return $this
      */
@@ -100,6 +103,8 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Date on which the transaction was issued.
+     * Format is YYYYMMDD.
      * @param $issuedDate
      * @return $this
      */
@@ -110,6 +115,8 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Time at which the transaction was issued.
+     * Format is HHMMSS.
      * @param $issuedTime
      * @return $this
      */
@@ -130,6 +137,11 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Allowed values:
+     * I1 - Intero
+     * MC - Meseum Card
+     * TC - Tourist Card
+     * Find out more in the TAB 3.
      * @param $titleType
      * @return $this
      */
@@ -140,6 +152,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     *
      * @param $orderCode
      * @return $this
      */
@@ -150,6 +163,13 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Only in case the transaction was nulled.
+     * Allowed values:
+     * 001 - Compilation errors
+     * 002 - Print not valid
+     * 003 - Incomplete Transaction
+     * 004 - Request nulled by client
+     * 005 - Request nulled by service reasons
      * @param $causal
      * @return $this
      */

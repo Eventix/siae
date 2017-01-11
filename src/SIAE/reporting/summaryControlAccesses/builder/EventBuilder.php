@@ -29,6 +29,7 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Name or denomination of the organizer.
      * @param $denominationOrganizer
      * @return $this
      */
@@ -50,6 +51,12 @@ class EventBuilder implements IBuilder
     }
 
     /**
+     * Accepted values:
+     * S - Spettacolo solo tit. tradizionali (A show with only traditional titles)
+     * I - Intrattenimento solo tit. tradizionali (Entertainment with only trad. titles)
+     * P - Spettacolo con tit. digitali (A show with digital titles)
+     * N - Intrattenimento con tit. digitali (Entertainment with digital titles)
+     *
      * @param $entertainmentShow
      * @return $this
      */
@@ -83,6 +90,8 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Code of the place where the event happens.
+     * It is provided by SIAE.
      * @param $localCode
      * @return $this
      */

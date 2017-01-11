@@ -6,6 +6,7 @@ use DOMDocument;
 use DOMDocumentType;
 use DOMImplementation;
 
+
 /**
  * Validates a DTD file against an XML file.
  * This class offers both static methods, useful when it comes to validate one or few files.
@@ -42,8 +43,26 @@ class DTDValidator
      */
     public function validate($xml, $rootXmlElementName)
     {
+        $this->setErrorHandlingForValidation();
         $this->loadDtd($xml, $rootXmlElementName);
-        return $this->documentToValidate->validate();
+        $isValidated = $this->documentToValidate->validate();
+        $this->resetErrorHandlingForValidation();
+        return $isValidated;
+    }
+
+    /**
+     * Sets the error handler to catch validator exceptions.
+     */
+    private function setErrorHandlingForValidation()
+    {
+        set_error_handler(function ($errno, $errstr, $errfile, $errline, array $errcontext) {
+            if (0 === error_reporting()) {
+                return false;
+            }
+
+            throw new ValidatorRunTimeException($errstr, 0, $this->dtdFileSource);
+
+        });
     }
 
     /**
@@ -55,6 +74,7 @@ class DTDValidator
      */
     private function loadDtd($xml, $rootXmlElementName)
     {
+
         $old = new DOMDocument;
         $old->loadXML($xml);
 
@@ -72,6 +92,14 @@ class DTDValidator
     }
 
     /**
+     *  Resets the error handler.
+     */
+    private function resetErrorHandlingForValidation()
+    {
+        restore_error_handler();
+    }
+
+    /**
      * @param string $dtdFileSource
      * @return $this Validator
      */
@@ -80,5 +108,4 @@ class DTDValidator
         $this->dtdFileSource = $dtdFileSource;
         return $this;
     }
-
 }

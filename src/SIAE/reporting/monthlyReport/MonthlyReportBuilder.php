@@ -23,6 +23,7 @@ class MonthlyReportBuilder implements IBuilder
 
 
     /**
+     * Format is YYYYMM.
      * @param $month
      * @return $this
      */
@@ -77,7 +78,7 @@ class MonthlyReportBuilder implements IBuilder
     }
 
     /**
-     * Set the creation date for the parent element
+     * Set the creation date for the parent element.
      * @param $number integer
      * @return $this
      */
@@ -88,7 +89,7 @@ class MonthlyReportBuilder implements IBuilder
     }
 
     /**
-     * Set the replacement value
+     * Set the replacement value.
      * @param $replacement string
      * @return $this
      */

@@ -266,6 +266,7 @@ class TotalTypeTitle
     }
 
     /**
+     * Corresponding to code "DD".
      * @return int
      */
     public function getTotalTitlesDigitalBlocked()
@@ -274,6 +275,7 @@ class TotalTypeTitle
     }
 
     /**
+     * Corresponding to code "DD".
      * @param int $totalTitlesDigitalBlocked
      */
     public function setTotalTitlesDigitalBlocked($totalTitlesDigitalBlocked)
@@ -282,6 +284,7 @@ class TotalTypeTitle
     }
 
     /**
+     * Corresponding to code "FT".
      * @return int
      */
     public function getTotalTitlesTraditionalStolen()
@@ -290,6 +293,7 @@ class TotalTypeTitle
     }
 
     /**
+     * Corresponding to code "FT".
      * @param int $totalTitlesTraditionalStolen
      */
     public function setTotalTitlesTraditionalStolen($totalTitlesTraditionalStolen)
@@ -298,6 +302,7 @@ class TotalTypeTitle
     }
 
     /**
+     * Corresponding to code "FD".
      * @return int
      */
     public function getTotalTitlesDigitalStolen()
@@ -306,6 +311,7 @@ class TotalTypeTitle
     }
 
     /**
+     * Corresponding to code "FD".
      * @param int $totalTitlesDigitalStolen
      */
     public function setTotalTitlesDigitalStolen($totalTitlesDigitalStolen)
@@ -314,6 +320,8 @@ class TotalTypeTitle
     }
 
     /**
+     * Total BlackListed traditional titles.
+     * Corresponding to code "BT".
      * @return int
      */
     public function getTotalTitlesTraditionalBLD()
@@ -322,6 +330,8 @@ class TotalTypeTitle
     }
 
     /**
+     * Total BlackListed traditional titles.
+     * Corresponding to code "BT".
      * @param int $totalTitlesTraditionalBLD
      */
     public function setTotalTitlesTraditionalBLD($totalTitlesTraditionalBLD)
@@ -330,6 +340,8 @@ class TotalTypeTitle
     }
 
     /**
+     * Total BlackListed digital titles.
+     * Corresponding to code "BD".
      * @return int
      */
     public function getTotalTitlesDigitalBLD()
@@ -338,6 +350,8 @@ class TotalTypeTitle
     }
 
     /**
+     * Set total BlackListed digital titles.
+     * Corresponding to code "BD".
      * @param int $totalTitlesDigitalBLD
      */
     public function setTotalTitlesDigitalBLD($totalTitlesDigitalBLD)

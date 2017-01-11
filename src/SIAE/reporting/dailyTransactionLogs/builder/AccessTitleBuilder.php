@@ -32,6 +32,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Activation card number.
      * @param $activationCard
      * @return $this
      */
@@ -52,6 +53,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Seal created by the activation card.
      * @param $fiscalSigilloCode
      * @return $this
      */
@@ -82,6 +84,8 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Date at which this was insterted in "ListaTitoliEmessi" - "released titles list"
+     * Format is YYYYMMDD
      * @param $ltaDate
      * @return $this
      */
@@ -92,6 +96,8 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Time at which this was insterted in "ListaTitoliEmessi" - "released titles list"
+     * Format is HHMMSS
      * @param $ltaTime
      * @return $this
      */
@@ -102,6 +108,11 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Allowed values:
+     * I1 - Intero
+     * MC - Meseum Card
+     * TC - Tourist Card
+     * Find out more in the TAB 3.
      * @param $titleType
      * @return $this
      */
@@ -225,6 +236,7 @@ class AccessTitleBuilder implements IBuilder
 
     /**
      * Nulled progressive number of the title or abonement.
+     * It is provided by the "Activation card".
      * @param $nulledProgressiveFiscalCode
      * @return $this
      */
@@ -235,6 +247,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     *
      * @param $nulledSigilloFiscalCode
      * @return $this
      */
@@ -246,6 +259,17 @@ class AccessTitleBuilder implements IBuilder
 
 
     /**
+     * Based on the TAB A from Provvedimento agenzia delle entrate 04.03.2008.
+     * Allowed Values are:
+     * BT - Biglietto Tradizionale
+     * CE - Cellulare
+     * CC - Carta di Credito
+     * CI - Carta d’Identità
+     * DD - Documento digitale
+     * FI - Carta fidelizzazione
+     * TC - Tessera Servizi Comunale
+     * TF - Tessera del tifoso
+     * TS - Tessera sanitaria
      * @param $supportCode
      * @return $this
      */
@@ -257,6 +281,7 @@ class AccessTitleBuilder implements IBuilder
 
 
     /**
+     * Code on the medium (ticket/mobile phone) presented at the access control.
      * @param $supportId
      * @return $this
      */

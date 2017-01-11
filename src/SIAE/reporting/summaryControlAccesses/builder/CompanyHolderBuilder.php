@@ -17,6 +17,7 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
+     * Name or denomination of the Activation Card Holder.
      * @param $denominationHolderCA
      * @return $this
      */
@@ -37,6 +38,7 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
+     * Activation code of the activation card.
      * @param $systemCodeCA
      * @return $this
      */

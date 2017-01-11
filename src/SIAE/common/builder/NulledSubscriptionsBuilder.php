@@ -80,7 +80,7 @@ class NulledSubscriptionsBuilder implements IBuilder
     }
 
     /**
-     * @return ReleasedNullSubscriptions
+     * @return NulledSubscriptions
      */
     public function build()
     {

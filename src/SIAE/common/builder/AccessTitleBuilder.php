@@ -16,6 +16,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     *
      * @param mixed $type
      * @return AccessTitleBuilder
      */
@@ -66,6 +67,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     *
      * @param mixed $VATpreSale
      * @return AccessTitleBuilder
      */

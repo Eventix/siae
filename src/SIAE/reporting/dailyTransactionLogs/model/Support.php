@@ -46,6 +46,7 @@ class Support
     }
 
     /**
+     * Identification code for the title medium presented at the access control.
      * @param string $supportIdCode
      */
     public function setSupportIdCode($supportIdCode)

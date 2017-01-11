@@ -32,6 +32,7 @@ class LTAEventBuilder implements IBuilder
     }
 
     /**
+     * Code of the place where the event takes place.
      * Provided by SIAE.
      * @param $localCode
      * @return $this

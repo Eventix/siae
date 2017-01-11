@@ -273,6 +273,8 @@ class Abonement
     }
 
     /**
+     * Date of the event.
+     * The format is YYYYMMDD.
      * @param mixed $eventDate
      */
     public function setEventDate($eventDate)
@@ -289,6 +291,8 @@ class Abonement
     }
 
     /**
+     * Time of the event.
+     * The format is HHMMSS.
      * @param mixed $eventTime
      */
     public function setEventTime($eventTime)
@@ -305,6 +309,8 @@ class Abonement
     }
 
     /**
+     * Genere della manifestazione
+     * E.G: cinema, teatro, calcio or musica.
      * @param mixed $genreType
      */
     public function setGenreType($genreType)

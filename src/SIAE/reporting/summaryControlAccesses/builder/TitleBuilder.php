@@ -18,6 +18,16 @@ class TitleBuilder implements IBuilder
     }
 
     /**
+     * Identifier of the area assigned for the event.
+     * The allowed values should be extracted from Misuratori Fiscali doc
+     * Table 2 page 20.
+     * In case the area was not found in the table, a unique one should
+     * be assigned instead.
+     * (Unique meaning that no two areas with such code exists)
+     * E.G.:
+     * AA - Ring A
+     * AB - Ring B
+     * ...
      * @param $codePlaceOrder
      * @return $this
      */
@@ -29,6 +39,7 @@ class TitleBuilder implements IBuilder
 
 
     /**
+     * Expected places for the sitting area.
      * @param $capacity
      * @return $this
      */
@@ -39,10 +50,11 @@ class TitleBuilder implements IBuilder
     }
 
     /**
+     * Group of information to be repeated for each title type.
      * @param $totalTitleType
      * @return $this
      */
-    public function setTotalTitleType($totalTitleType)
+    public function totalTitleType($totalTitleType)
     {
         $this->title->setTotalTitleType($totalTitleType);
         return $this;

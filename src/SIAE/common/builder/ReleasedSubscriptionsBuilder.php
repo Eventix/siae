@@ -63,16 +63,6 @@ class ReleasedSubscriptionsBuilder implements IBuilder
         return $this;
     }
 
-    /**
-     * @param mixed $performance
-     * @return ReleasedSubscriptionsBuilder
-     */
-    public function performance($performance)
-    {
-        $this->releasedSubscription->setPerformanceAmount($performance);
-        return $this;
-    }
-
 
     /**
      * @return ReleasedSubscriptions

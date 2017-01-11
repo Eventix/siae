@@ -151,6 +151,12 @@ class Event
     }
 
     /**
+     * Accepted values:
+     * S - Spettacolo solo tit. tradizionali (A show with only traditional titles)
+     * I - Intrattenimento solo tit. tradizionali (Entertainment with only trad. titles)
+     * P - Spettacolo con tit. digitali (A show with digital titles)
+     * N - Intrattenimento con tit. digitali (Entertainment with digital titles)
+     *
      * @param string $entertainmentShow
      */
     public function setEntertainmentShow($entertainmentShow)

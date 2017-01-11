@@ -96,7 +96,7 @@ class TotalTypeAbonement
      * @SerializedName("TotaleTitoliAbbBLTradiz")
      * @var int
      */
-    private $totalTitlesTraditionalAbonements;
+    private $totalTitlesTraditionalAbonementsBLD;
 
     /**
      * @SerializedName("TotaleTitoliAbbBLDigitali")
@@ -331,17 +331,17 @@ class TotalTypeAbonement
     /**
      * @return int
      */
-    public function getTotalTitlesTraditionalAbonements()
+    public function getTotalTitlesTraditionalAbonementsBLD()
     {
-        return $this->totalTitlesTraditionalAbonements;
+        return $this->totalTitlesTraditionalAbonementsBLD;
     }
 
     /**
-     * @param int $totalTitlesTraditionalAbonements
+     * @param int $totalTitlesTraditionalAbonementsBLD
      */
-    public function setTotalTitlesTraditionalAbonements($totalTitlesTraditionalAbonements)
+    public function setTotalTitlesTraditionalAbonementsBLD($totalTitlesTraditionalAbonementsBLD)
     {
-        $this->totalTitlesTraditionalAbonements = $totalTitlesTraditionalAbonements;
+        $this->totalTitlesTraditionalAbonementsBLD = $totalTitlesTraditionalAbonementsBLD;
     }
 
     /**

@@ -1,6 +1,5 @@
 <?php
 
-
 require_once "autoload.php";
 
 /**
@@ -114,17 +113,18 @@ $nulledSubscriptions = $nulledSubscriptionsBuilder
     ->VATpreSale(0)
     ->build();
 
-$subscriptions = $subscriptionsBuilder
-    ->code("CODICE ABBONAMENTO")
-    ->validity(20160901)
-    ->taxationType("")
-    ->turn("L")
-    ->orderCode("UN")
-    ->titleType("I1")
-    ->amountOfValidatedEvent(1)
-    ->releasedSubscriptions($releasedSubscriptions)
-    ->nulledSubscriptions($nulledSubscriptions)
-    ->build();
+$subscriptions = [
+    $subscriptionsBuilder
+        ->code("CODICE ABBONAMENTO")
+        ->validity(20160901)
+        ->taxationType("")
+        ->turn("L")
+        ->orderCode("UN")
+        ->titleType("I1")
+        ->amountOfValidatedEvent(1)
+        ->releasedSubscriptions($releasedSubscriptions)
+        ->nulledSubscriptions($nulledSubscriptions)
+        ->build()];
 
 $organizer = $organizerBuilder
     ->classification("SALE")
@@ -155,15 +155,16 @@ $serializer = JMS\Serializer\SerializerBuilder::create()->build();
 
 // Show
 $serializedXML = $serializer->serialize($dailyReport, 'xml');
-echo $serializedXML;
+//echo $serializedXML;
 
 // Test to try it with the provided sample files
 // - unfortunately it also fails
-// $serializedXML = file_get_contents("templates/RMG_2015_09_00_001.xml");
+//$serializedXML = file_get_contents("templates/RMG_2015_09_00_001.xml");
 
+echo $serializedXML;
 
-// Validate against DTD
-$dailyReportValidator = new \SIAE\validator\MonthlyReportValidator();
-echo $dailyReportValidator->validate($serializedXML);
+// TODO make the example pass the DTD validation
+$dailyReportValidator = new \SIAE\validator\DailyReportValidator();
+$dailyReportValidator->validate($serializedXML);
 
 ?>

@@ -40,6 +40,11 @@ class TicketSubscriptionBuilder implements IBuilder
     }
 
     /**
+     * Allowed values:
+     * I1 - Intero
+     * MC - Meseum Card
+     * TC - Tourist Card
+     * Find out more in the TAB 3.
      * @param mixed $titleType
      * @return TicketSubscriptionBuilder
      */

@@ -159,11 +159,13 @@ $serializer = JMS\Serializer\SerializerBuilder::create()->build();
 $serializedXML = $serializer->serialize($monthlyReport, 'xml');
 echo $serializedXML;
 
+
 // Test to try it with the provided sample files
 // - unfortunately it also fails
 //$serializedXML = file_get_contents("templates/RMG_2015_09_00_001.xml");
 
 
+// TODO: make the example pass the DTD validation
 // Validate against DTD
 $monthlyReportValidator = new \SIAE\validator\MonthlyReportValidator();
 echo $monthlyReportValidator->validate($serializedXML);

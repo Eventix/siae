@@ -168,6 +168,7 @@ class Transaction
     }
 
     /**
+     * Fiscal code of the person who owns the control system.
      * @param string $CFOrganizer
      */
     public function setCFOrganizer($CFOrganizer)

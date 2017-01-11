@@ -5,12 +5,14 @@
     {
       "name": "Chris de Jong",
       "email": "Chris@eventix.nl"
+    },
+    {
+      "name": "Lorenzo Verri",
+      "email": "lore.verri@gmail.com"
     }
   ],
   "require": {
     "php": ">=5.3.0",
-    "symfony/serializer": "*",
-    "symfony/property-access": "*",
     "jms/serializer": "*",
     "phpunit/phpunit": "*"
   },

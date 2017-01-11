@@ -16,7 +16,6 @@ class TotalTypeTitleBuilder implements IBuilder
         $this->totalTypeTitle = new TotalTypeTitle();
     }
 
-
     /**
      * Total of the titles inserted in LTA.
      * (VT+VD+ZT+ZD+MT+MD+AT+AD+DT+DD+FT+FD+BT+BD)
@@ -30,6 +29,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total not validated access traditional titles.
+     * Corresponding to code "VT".
      * @param $totalTraditionalTitlesN int
      * @return $this
      */
@@ -40,6 +41,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total not validated access digital titles.
+     * Corresponding to code "VD".
      * @param $totalDigitalAccessTitlesN int
      * @return $this
      */
@@ -50,6 +53,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total automatic access traditional titles.
+     * Corresponding to code "ZT".
      * @param $totalAutomaticTraditionalTitles int
      * @return $this
      */
@@ -60,6 +65,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total automatic access digital titles.
+     * Corresponding to code "ZD".
      * @param $totalAutomaticDigitalTitles int
      * @return $this
      */
@@ -70,6 +77,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total manual access traditional titles.
+     * Corresponding to code "MT"
      * @param $totalTitlesManualTraditional int
      * @return $this
      */
@@ -80,6 +89,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total manual access digital titles.
+     * Corresponding to code "MD"
      * @param $totalTitlesManualDigital int
      * @return $this
      */
@@ -90,6 +101,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total traditional nulled titles.
+     * Corresponding to code "AT".
      * @param $totalTitlesTraditionalNulled int
      * @return $this
      */
@@ -100,6 +113,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total traditional nulled titles.
+     * Corresponding to code "AD".
      * @param $totalTitlesDigitalNulled int
      * @return $this
      */
@@ -110,6 +125,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total traditional blocked titles.
+     * Corresponding to code "DT".
      * @param $totalTitlesTraditionalBlocked int
      * @return $this
      */
@@ -120,6 +137,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total digital blocked titles.
+     * Corresponding to code "DD".
      * @param $totalTitlesDigitalBlocked int
      * @return $this
      */
@@ -130,6 +149,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total traditional stolen/lost titles.
+     * Corresponding to code "FT".
      * @param $totalTitlesTraditionalStolen int
      * @return $this
      */
@@ -140,6 +161,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total digital stolen/lost titles.
+     * Corresponding to code "FD".
      * @param $totalTitlesDigitalStolen int
      * @return $this
      */
@@ -150,6 +173,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total tradition BlackListed titles.
+     * Corresponding to code "BT".
      * @param $totalTitlesTraditionalBLD int
      * @return $this
      */
@@ -160,6 +185,8 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Set total digital BlackListed titles.
+     * Corresponding to code "BD".
      * @param $totalTitlesDigitalBLD int
      * @return $this
      */

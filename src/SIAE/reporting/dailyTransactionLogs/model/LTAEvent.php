@@ -227,6 +227,7 @@ class LTAEvent
     }
 
     /**
+     *
      * @param mixed $supports
      */
     public function setSupports($supports)

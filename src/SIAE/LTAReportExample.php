@@ -79,7 +79,6 @@ echo $serializedXML;
 
 // Validate against DTD
 $LTAValidator = new \SIAE\validator\LtaValidator();
-
 echo $LTAValidator->validate($serializedXML);
 
 ?>

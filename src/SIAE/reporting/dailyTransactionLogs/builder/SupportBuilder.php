@@ -26,6 +26,7 @@ class SupportBuilder implements IBuilder
     }
 
     /**
+     * Identification code for the title medium presented at the access control.
      * @param $supportIdCode
      * @return $this
      */

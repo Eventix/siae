@@ -151,6 +151,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     *
      * @param $genreType
      * @return $this
      */

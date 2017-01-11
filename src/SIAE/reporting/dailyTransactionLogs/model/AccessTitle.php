@@ -503,6 +503,8 @@ class AccessTitle
     }
 
     /**
+     * Nulled progressive number of the title or abonement.
+     * It is provided by the "Activation card".
      * @param mixed $nulledProgressiveFiscalCode
      */
     public function setNulledProgressiveFiscalCode($nulledProgressiveFiscalCode)
@@ -535,16 +537,17 @@ class AccessTitle
     }
 
     /**
-     * Possible parameters are:
-     * BT Biglietto Tradizionale
-     * CE Cellulare
-     * CC Carta di Credito
-     * CI Carta d’Identità
-     * DD Documento digitale
-     * FI Carta fidelizzazione
-     * TC Tessera Servizi Comunale
-     * TF Tessera del tifoso
-     * TS Tessera sanitaria
+     * Based on the TAB A from Provvedimento agenzia delle entrate 04.03.2008.
+     * Allowed Values are:
+     * BT - Biglietto Tradizionale
+     * CE - Cellulare
+     * CC - Carta di Credito
+     * CI - Carta d’Identità
+     * DD - Documento digitale
+     * FI - Carta fidelizzazione
+     * TC - Tessera Servizi Comunale
+     * TF - Tessera del tifoso
+     * TS - Tessera sanitaria
      * @param string $supportCode
      */
     public function setSupportCode($supportCode)
