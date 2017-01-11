@@ -8,6 +8,8 @@ use SIAE\common\model\Organizer;
 
 /**
  * Builder for the SIAE XML mapping.
+ * Monthly report. Contains information about titles,
+ * abonements, events and more.
  */
 class MonthlyReportBuilder implements IBuilder
 {

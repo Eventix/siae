@@ -4,6 +4,8 @@ namespace SIAE\reporting\transactionLogs;
 
 /**
  * Builder for the LTA SIAE XML mapping.
+ * Log containing all the transactions in relation to the
+ * the tickets sold.
  */
 class TransactionLogBuilder
 {

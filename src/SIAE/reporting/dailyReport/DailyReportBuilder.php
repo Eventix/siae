@@ -7,6 +7,7 @@ use SIAE\common\model\CompanyHolder;
 use SIAE\common\model\Organizer;
 
 /**
+ *
  * Builder for the SIAE XML mapping.
  */
 class DailyReportBuilder implements IBuilder
@@ -64,7 +65,7 @@ class DailyReportBuilder implements IBuilder
     }
 
     /**
-     * Set the generation time for the parent element
+     * Set the generation time for the parent element.
      * @param $time string
      * @return $this
      */
@@ -75,7 +76,7 @@ class DailyReportBuilder implements IBuilder
     }
 
     /**
-     * Set the creation date for the parent element
+     * Set the creation date for the parent element.
      * @param $number integer
      * @return $this
      */

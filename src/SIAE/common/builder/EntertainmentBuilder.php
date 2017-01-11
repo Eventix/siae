@@ -20,6 +20,8 @@ class EntertainmentBuilder implements IBuilder
     }
 
     /**
+     * Accepted values are I (entertainment) or S (of only show).
+     * The taxation depends on it.
      * @param String $taxationType
      * @return EntertainmentBuilder
      */

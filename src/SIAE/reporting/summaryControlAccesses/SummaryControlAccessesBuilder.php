@@ -7,7 +7,9 @@ use SIAE\common\builder\IBuilder;
 
 
 /**
+ *
  * Builder for the RCA SIAE XML mapping.
+ * Summary of the accesses that happened at the event.
  */
 class SummaryControlAccessesBuilder implements IBuilder
 {

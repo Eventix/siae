@@ -3,11 +3,12 @@
 namespace SIAE\reporting\dailyTransactionLogs;
 
 use SIAE\common\builder\IBuilder;
-use SIAE\common\model\CompanyHolder;
-use SIAE\common\model\Organizer;
 
 /**
- * Builder for the LTA SIAE XML mapping.
+ * Builder for the LTA (Lista Titoli Accessi) SIAE XML mapping.
+ * Groups the events of the day and includes details about ticket
+ * issued such as the price the "support" id, fiscal seal...
+ *
  */
 class DailyTransactionLogBuilder implements IBuilder
 {
