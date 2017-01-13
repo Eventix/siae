@@ -3,6 +3,7 @@
 namespace SIAE\reporting\transactionLog\builder;
 
 use SIAE\reporting\transactionLog\model\AccessTitle;
+use SIAE\reporting\transactionLog\model\Complementary;
 
 class AccessTitleBuilder
 {
@@ -49,6 +50,8 @@ class AccessTitleBuilder
     }
 
     /**
+     * Event date.
+     * Format is YYYYMMDD.
      * @param $eventDate
      * @return $this
      */
@@ -59,6 +62,8 @@ class AccessTitleBuilder
     }
 
     /**
+     * Event time.
+     * Format is HHMM.
      * @param $eventTime
      * @return $this
      */
@@ -69,6 +74,10 @@ class AccessTitleBuilder
     }
 
     /**
+     * Genre of the event.
+     * See TAB1 in AppMisuratoriFiscali.pdf
+     * E.G:
+     * cinema, teatro, calcio...
      * @param $genreType
      * @return $this
      */
@@ -79,6 +88,7 @@ class AccessTitleBuilder
     }
 
     /**
+     * Title of the event.
      * @param $title
      * @return $this
      */
@@ -89,7 +99,8 @@ class AccessTitleBuilder
     }
 
     /**
-     * @param $complementary
+     * Complementary child.
+     * @param Complementary $complementary
      * @return $this
      */
     public function complementary($complementary)
@@ -99,26 +110,26 @@ class AccessTitleBuilder
     }
 
     /**
+     * Allowed values:
+     * I1 - Intero
+     * MC - Meseum Card
+     * TC - Tourist Card
+     * Find out more in the TAB 3.
      * @param $type
      * @return $this
      */
-    public function type($type)
+    public function titleType($type)
     {
         $this->accessTitle->setType($type);
         return $this;
     }
 
-    /**
-     * @param $quantity
-     * @return $this
-     */
-    public function quantity($quantity)
-    {
-        $this->accessTitle->setQuantity($quantity);
-        return $this;
-    }
 
     /**
+     * Total amount for the operations.
+     * Includes VAT and eventually an extra fee referring to the
+     * abonement code.
+     * It does not include the preSale.
      * @param $gross
      * @return $this
      */
@@ -129,6 +140,9 @@ class AccessTitleBuilder
     }
 
     /**
+     * Amount related to the preSale including VAT.
+     * If that is referring to nulled access titles or abonements
+     * it has to be evaluated only if the preSale amount was reimbursed.
      * @param $preSale
      * @return $this
      */
@@ -139,16 +153,18 @@ class AccessTitleBuilder
     }
 
     /**
-     * @param $VATequivalent
+     * VAT related to the gross value.
+     * @param $VAT
      * @return $this
      */
-    public function vatEquivalent($VATequivalent)
+    public function VAT($VAT)
     {
-        $this->accessTitle->setVATequivalent($VATequivalent);
+        $this->accessTitle->setVAT($VAT);
         return $this;
     }
 
     /**
+     * VAT referring to the preSale.
      * @param $VATpreSale
      * @return $this
      */
@@ -158,14 +174,5 @@ class AccessTitleBuilder
         return $this;
     }
 
-    /**
-     * @param $performanceAmount
-     * @return $this
-     */
-    public function performanceAmount($performanceAmount)
-    {
-        $this->accessTitle->setPerformanceAmount($performanceAmount);
-        return $this;
-    }
 
 }

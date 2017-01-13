@@ -28,6 +28,7 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
+     * Fiscal code of the Activation Card Holder.
      * @param $fiscalCodeHolderCA
      * @return $this
      */
@@ -49,6 +50,8 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
+     * Date for this summary.
+     * Format is YYYYMMDD.
      * @param $dateSummary
      * @return $this
      */
@@ -59,6 +62,8 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
+     * Date on which this summary was created.
+     * Format is YYYYMMDD.
      * @param $dateSummaryGeneration
      * @return $this
      */
@@ -69,6 +74,8 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
+     * Time at which the summary was created.
+     * Format is
      * @param $timeSummaryGeneration
      * @return $this
      */
@@ -79,6 +86,7 @@ class CompanyHolderBuilder implements IBuilder
     }
 
     /**
+     * Auto incremented number for this summary.
      * @param $autoIncrementedSummary
      * @return $this
      */

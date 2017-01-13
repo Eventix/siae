@@ -3,39 +3,38 @@
 namespace SIAE\common\builder;
 
 
-use SIAE\common\model\TicketSubscription;
-use SIAE\common\model\Turn;
+use SIAE\common\model\TicketAbonements;
 
-class TicketSubscriptionBuilder implements IBuilder
+class TicketAbonementsBuilder implements IBuilder
 {
     /**
-     * @var TicketSubscription
+     * @var TicketAbonements
      */
-    private $ticketSubscription;
+    private $ticketAbonements;
 
     public function __construct()
     {
-        $this->ticketSubscription = new TicketSubscription();
+        $this->ticketAbonements = new TicketAbonements();
     }
 
 
     /**
      * @param mixed $fiscalCode
-     * @return TicketSubscriptionBuilder
+     * @return TicketAbonementsBuilder
      */
     public function fiscalCode($fiscalCode)
     {
-        $this->ticketSubscription->setFiscalCode($fiscalCode);
+        $this->ticketAbonements->setFiscalCode($fiscalCode);
         return $this;
     }
 
     /**
      * @param mixed $code
-     * @return TicketSubscriptionBuilder
+     * @return TicketAbonementsBuilder
      */
     public function code($code)
     {
-        $this->ticketSubscription->setCode($code);
+        $this->ticketAbonements->setCode($code);
         return $this;
     }
 
@@ -46,49 +45,49 @@ class TicketSubscriptionBuilder implements IBuilder
      * TC - Tourist Card
      * Find out more in the TAB 3.
      * @param mixed $titleType
-     * @return TicketSubscriptionBuilder
+     * @return TicketAbonementsBuilder
      */
     public function titleType($titleType)
     {
-        $this->ticketSubscription->setTitleType($titleType);
+        $this->ticketAbonements->setTitleType($titleType);
         return $this;
     }
 
     /**
      * @param mixed $quantity
-     * @return TicketSubscriptionBuilder
+     * @return TicketAbonementsBuilder
      */
     public function quantity($quantity)
     {
-        $this->ticketSubscription->setQuantity($quantity);
+        $this->ticketAbonements->setQuantity($quantity);
         return $this;
     }
 
     /**
      * @param mixed $notionalAmount
-     * @return TicketSubscriptionBuilder
+     * @return TicketAbonementsBuilder
      */
     public function notionalAmount($notionalAmount)
     {
-        $this->ticketSubscription->setNotionalAmount($notionalAmount);
+        $this->ticketAbonements->setNotionalAmount($notionalAmount);
         return $this;
     }
 
     /**
      * @param mixed $notionalVAT
-     * @return TicketSubscriptionBuilder
+     * @return TicketAbonementsBuilder
      */
     public function notionalVAT($notionalVAT)
     {
-        $this->ticketSubscription->setNotionalVAT($notionalVAT);
+        $this->ticketAbonements->setNotionalVAT($notionalVAT);
         return $this;
     }
 
     /**
-     * @return TicketSubscriptionBuilder
+     * @return TicketAbonementsBuilder
      */
     public function build()
     {
-        return $this->ticketSubscription;
+        return $this->ticketAbonements;
     }
 }

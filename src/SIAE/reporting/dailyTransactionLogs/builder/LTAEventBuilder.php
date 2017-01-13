@@ -79,6 +79,10 @@ class LTAEventBuilder implements IBuilder
 
 
     /**
+     * Genre of the event.
+     * See TAB1 in AppMisuratoriFiscali.pdf
+     * E.G:
+     * cinema, teatro, calcio...
      * @param $genreType
      * @return $this
      */

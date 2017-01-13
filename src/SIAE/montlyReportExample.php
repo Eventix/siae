@@ -16,10 +16,10 @@ $placeBuilder = new \SIAE\common\builder\PlaceBuilder();
 $multiGenreBuilder = new \SIAE\common\builder\MultipleGenreBuilder();
 $artworkTitleBuilder = new \SIAE\common\builder\ArtworksTitlesBuilder();
 $placeOrderBuilder = new \SIAE\common\builder\PlaceOrderBuilder();
-$ticketSubscriptionBuilder = new \SIAE\common\builder\TicketSubscriptionBuilder();
-$subscriptionsBuilder = new \SIAE\common\builder\SubscriptionsBuilder();
-$releasedSubscriptionsBuilder = new \SIAE\common\builder\ReleasedSubscriptionsBuilder();
-$nulledSubscriptionsBuilder = new \SIAE\common\builder\NulledSubscriptionsBuilder();
+$ticketSubscriptionBuilder = new \SIAE\common\builder\TicketAbonementsBuilder();
+$subscriptionsBuilder = new \SIAE\common\builder\AbonementBuilder();
+$releasedSubscriptionsBuilder = new \SIAE\common\builder\IssuedAbonementsBuilder();
+$nulledSubscriptionsBuilder = new \SIAE\common\builder\NulledAbonementsBuilder();
 
 // Start creating the objects from most nested elements
 $artworkTitles = $artworkTitleBuilder
@@ -124,16 +124,16 @@ $subscriptions = $subscriptionsBuilder
     ->orderCode("UN")
     ->titleType("I1")
     ->amountOfValidatedEvent(1)
-    ->releasedSubscriptions($releasedSubscriptions)
-    ->nulledSubscriptions($nulledSubscriptions)
+    ->issuedAbonements($releasedSubscriptions)
+    ->nulledAbonements($nulledSubscriptions)
     ->build();
 
 $organizer = $organizerBuilder
-    ->classification("SALE")
+    ->denomination("SALE")
     ->organizerType("E")
     ->fiscalCode("03566320176")
     ->events($events)
-    ->subscriptions($subscriptions)
+    ->abonements($subscriptions)
     ->build();
 
 $companyHolder = $companyHolderBuilder

@@ -7,7 +7,7 @@ use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\XmlAttribute;
 
 /** @XmlRoot("Abbonamenti") */
-class Subscriptions
+class Abonements
 {
     /** @SerializedName("CodiceAbbonamento") */
     private $code;
@@ -24,9 +24,9 @@ class Subscriptions
     /** @SerializedName("QuantitaEventiAbilitati") */
     private $amountOfValidatedEvent;
     /** @SerializedName("AbbonamentiEmessi") */
-    private $releasedSubscriptions;
+    private $releasedAbonements;
     /** @SerializedName("AbbonamentiAnnullati") */
-    private $nulledSubscriptions;
+    private $nulledAbonements;
 
     /**
      * @return mixed
@@ -133,7 +133,7 @@ class Subscriptions
     }
 
     /**
-     * Number of events involved in a single Subscription/Order
+     * Number of events involved in a single Abonement/Order
      *
      * @param mixed $amountOfValidatedEvent
      */
@@ -145,33 +145,33 @@ class Subscriptions
     /**
      * @return mixed
      */
-    public function getReleasedSubscriptions()
+    public function getReleasedAbonements()
     {
-        return $this->releasedSubscriptions;
+        return $this->releasedAbonements;
     }
 
     /**
-     * @param mixed $releasedSubscriptions
+     * @param mixed $releasedAbonements
      */
-    public function setReleasedSubscriptions($releasedSubscriptions)
+    public function setReleasedAbonements($releasedAbonements)
     {
-        $this->releasedSubscriptions = $releasedSubscriptions;
+        $this->releasedAbonements = $releasedAbonements;
     }
 
     /**
      * @return mixed
      */
-    public function getNulledSubscriptions()
+    public function getNulledAbonements()
     {
-        return $this->nulledSubscriptions;
+        return $this->nulledAbonements;
     }
 
     /**
-     * @param mixed $nulledSubscriptions
+     * @param mixed $nulledAbonements
      */
-    public function setNulledSubscriptions($nulledSubscriptions)
+    public function setNulledAbonements($nulledAbonements)
     {
-        $this->nulledSubscriptions = $nulledSubscriptions;
+        $this->nulledAbonements = $nulledAbonements;
     }
 
 

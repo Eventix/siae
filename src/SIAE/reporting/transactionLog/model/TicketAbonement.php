@@ -6,7 +6,7 @@ use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
 
 /** @XmlRoot("BigliettoAbbonamento") */
-class TicketSubscription
+class TicketAbonement
 {
     /** @SerializedName("Annullamento") */
     private $isNulled;

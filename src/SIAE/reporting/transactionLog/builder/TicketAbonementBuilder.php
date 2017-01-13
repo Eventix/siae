@@ -4,61 +4,69 @@ namespace SIAE\reporting\transactionLog\builder;
 
 
 use SIAE\common\builder\IBuilder;
-use SIAE\reporting\transactionLog\model\TicketSubscription;
+use SIAE\reporting\transactionLog\model\TicketAbonement;
 
-class TicketSubscriptionBuilder implements IBuilder
+class TicketAbonementBuilder implements IBuilder
 {
     /**
-     * @var TicketSubscription
+     * @var TicketAbonement
      */
-    private $ticketSubscription;
+    private $ticketAbonement;
 
     public function __construct()
     {
-        $this->ticketSubscription = new TicketSubscription();
+        $this->ticketAbonement = new TicketAbonement();
     }
 
 
     /**
+     * Does this transaction relate to a cancellation?
      * @param $isNulled
      * @return $this
      */
     public function isNulled($isNulled)
     {
-        $this->ticketSubscription->setIsNulled($isNulled);
+        $this->ticketAbonement->setIsNulled($isNulled);
         return $this;
     }
 
 
     /**
+     *
+     * // TODO missing on the appMisuratoriFiscali
+     *
      * @param $code
      * @return $this
      */
     public function code($code)
     {
-        $this->ticketSubscription->setCode($code);
+        $this->ticketAbonement->setCode($code);
         return $this;
     }
 
 
     /**
+     * Date of the event.
+     * Format is YYYYMMDD.
      * @param $eventDate
      * @return $this
      */
     public function eventDate($eventDate)
     {
-        $this->ticketSubscription->setEventDate($eventDate);
+        $this->ticketAbonement->setEventDate($eventDate);
         return $this;
     }
 
 
     /**
+     * Time of the event.
+     * Format is HHMM.
      * @param $eventTime
      * @return $this
      */
     public function eventTime($eventTime)
     {
-        $this->ticketSubscription->setEventTime($eventTime);
+        $this->ticketAbonement->setEventTime($eventTime);
         return $this;
     }
 
@@ -69,7 +77,7 @@ class TicketSubscriptionBuilder implements IBuilder
      */
     public function genreType($genreType)
     {
-        $this->ticketSubscription->setGenreType($genreType);
+        $this->ticketAbonement->setGenreType($genreType);
         return $this;
     }
 
@@ -80,7 +88,7 @@ class TicketSubscriptionBuilder implements IBuilder
      */
     public function title($title)
     {
-        $this->ticketSubscription->setTitolo($title);
+        $this->ticketAbonement->setTitolo($title);
         return $this;
 
     }
@@ -92,7 +100,7 @@ class TicketSubscriptionBuilder implements IBuilder
      */
     public function localCode($localCode)
     {
-        $this->ticketSubscription->setLocalCode($localCode);
+        $this->ticketAbonement->setLocalCode($localCode);
         return $this;
     }
 
@@ -103,7 +111,7 @@ class TicketSubscriptionBuilder implements IBuilder
      */
     public function incrementedAbonementCounter($incrementedAbonementCounter)
     {
-        $this->ticketSubscription->setIncrementedAbonementCounter($incrementedAbonementCounter);
+        $this->ticketAbonement->setIncrementedAbonementCounter($incrementedAbonementCounter);
         return $this;
     }
 
@@ -113,7 +121,7 @@ class TicketSubscriptionBuilder implements IBuilder
      */
     public function fiscalCode($fiscalCode)
     {
-        $this->ticketSubscription->setFiscalCode($fiscalCode);
+        $this->ticketAbonement->setFiscalCode($fiscalCode);
         return $this;
     }
 
@@ -124,7 +132,7 @@ class TicketSubscriptionBuilder implements IBuilder
      */
     public function notionalAmount($notionalAmount)
     {
-        $this->ticketSubscription->setNotionalAmount($notionalAmount);
+        $this->ticketAbonement->setNotionalAmount($notionalAmount);
         return $this;
     }
 
@@ -135,17 +143,17 @@ class TicketSubscriptionBuilder implements IBuilder
      */
     public function notionalVAT($notionalVAT)
     {
-        $this->ticketSubscription->setNotionalVAT($notionalVAT);
+        $this->ticketAbonement->setNotionalVAT($notionalVAT);
         return $this;
     }
 
 
     /**
-     * @return TicketSubscription returns the newly built object
+     * @return TicketAbonement returns the newly built object
      */
     public function build()
     {
-        return $this->ticketSubscription;
+        return $this->ticketAbonement;
     }
 
 }

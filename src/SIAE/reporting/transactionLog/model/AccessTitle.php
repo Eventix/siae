@@ -16,14 +16,12 @@ class AccessTitle
     private $isNulled;
     /** @SerializedName("TipoTitolo") */
     private $type;
-    /** @SerializedName("Quantita") */
-    private $quantity;
     /** @SerializedName("CorrispettivoLordo") */
     private $gross;
     /** @SerializedName("Prevendita") */
     private $preSale;
     /** @SerializedName("IVACorrispettivo") */
-    private $VATequivalent;
+    private $VAT;
     /** @SerializedName("IVAPrevendita") */
     private $VATpreSale;
     /** @SerializedName("IVAFigurativa") */
@@ -192,22 +190,6 @@ class AccessTitle
     /**
      * @return mixed
      */
-    public function getQuantity()
-    {
-        return $this->quantity;
-    }
-
-    /**
-     * @param mixed $quantity
-     */
-    public function setQuantity($quantity)
-    {
-        $this->quantity = $quantity;
-    }
-
-    /**
-     * @return mixed
-     */
     public function getGross()
     {
         return $this->gross;
@@ -240,17 +222,17 @@ class AccessTitle
     /**
      * @return mixed
      */
-    public function getVATequivalent()
+    public function getVAT()
     {
-        return $this->VATequivalent;
+        return $this->VAT;
     }
 
     /**
-     * @param mixed $VATequivalent
+     * @param mixed $VAT
      */
-    public function setVATequivalent($VATequivalent)
+    public function setVAT($VAT)
     {
-        $this->VATequivalent = $VATequivalent;
+        $this->VAT = $VAT;
     }
 
     /**

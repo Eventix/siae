@@ -154,9 +154,9 @@ class Transaction
     private $abonement;
     /**
      * @SerializedName("BigliettoAbbonamento")
-     * @var TicketSubscription
+     * @var TicketAbonement
      */
-    private $ticketSubscription;
+    private $ticketAbonement;
 
 
     /**
@@ -529,19 +529,19 @@ class Transaction
     }
 
     /**
-     * @return TicketSubscription
+     * @return TicketAbonement
      */
-    public function getTicketSubscription()
+    public function getTicketAbonement()
     {
-        return $this->ticketSubscription;
+        return $this->ticketAbonement;
     }
 
     /**
-     * @param TicketSubscription $ticketSubscription
+     * @param TicketAbonement $ticketAbonement
      */
-    public function setTicketSubscription($ticketSubscription)
+    public function setTicketAbonement($ticketAbonement)
     {
-        $this->ticketSubscription = $ticketSubscription;
+        $this->ticketAbonement = $ticketAbonement;
     }
 
 }

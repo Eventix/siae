@@ -7,9 +7,9 @@ use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
 
 /** @XmlRoot("BigliettiAbbonamento") */
-class TicketSubscription
+class TicketAbonements
 {
-    /** @SerializedName("CodiceFiscale") */
+    /** @SerializedName("CodiceFiscale" */
     private $fiscalCode;
     /** @SerializedName("CodiceAbbonamento") */
     private $code;

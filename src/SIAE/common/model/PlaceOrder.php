@@ -15,7 +15,7 @@ class PlaceOrder
     /** @SerializedName("TitoliAccesso") */
     private $accessTitle;
     /** @SerializedName("BigliettiAbbonamento") */
-    private $subscriptionTicket;
+    private $abonementsTicket;
     private $seasonTicket;
 
     /**
@@ -90,17 +90,17 @@ class PlaceOrder
     /**
      * @return mixed
      */
-    public function getSubscriptionTicket()
+    public function getAbonementsTicket()
     {
-        return $this->subscriptionTicket;
+        return $this->abonementsTicket;
     }
 
     /**
-     * @param mixed $subscriptionTicket
+     * @param mixed $abonementTicket
      */
-    public function setSubscriptionTicket($subscriptionTicket)
+    public function setAbonementTicket($abonementTicket)
     {
-        $this->subscriptionTicket = $subscriptionTicket;
+        $this->abonementsTicket = $abonementTicket;
     }
 
     /**

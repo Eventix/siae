@@ -197,6 +197,13 @@ class TotalTypeTitleBuilder implements IBuilder
     }
 
     /**
+     * Type of the access title.
+     * Allowed values:
+     * I1 - Intero
+     * MC - Meseum Card
+     * TC - Tourist Card
+     * Find out more in the TAB 3.
+     *
      * @param $totalType string
      * @return $this
      */

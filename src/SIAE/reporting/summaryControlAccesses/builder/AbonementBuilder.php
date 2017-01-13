@@ -4,6 +4,7 @@ namespace SIAE\reporting\summaryControlAccesses\builder;
 
 use SIAE\common\builder\IBuilder;
 use SIAE\reporting\summaryControlAccesses\model\Abonement;
+use SIAE\reporting\summaryControlAccesses\model\TotalTypeAbonement;
 
 class AbonementBuilder implements IBuilder
 {
@@ -19,6 +20,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Place code provided by SIAE.
      * @param $placeCode
      * @return $this
      */
@@ -30,6 +32,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Available capacity.
      * @param $capacity
      * @return $this
      */
@@ -41,7 +44,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
-     * @param $totalAbonementTypes
+     * @param TotalTypeAbonement $totalAbonementTypes
      * @return $this
      */
     public function totalAbonementTypes($totalAbonementTypes)

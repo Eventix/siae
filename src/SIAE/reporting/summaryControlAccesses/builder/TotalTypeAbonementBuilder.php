@@ -18,8 +18,12 @@ class TotalTypeAbonementBuilder implements IBuilder
 
 
     /**
-     * Total of the Abonement inserted in LTA.
-     * (VT+VD+ZT+ZD+MT+MD+AT+AD+DT+DD+FT+FD+BT+BD)
+     * Type of the abonement title.
+     * Allowed values:
+     * I1 - Intero
+     * MC - Meseum Card
+     * TC - Tourist Card
+     * Find out more in the TAB 3.
      * @param $totalAbonementType
      * @return $this
      */
@@ -31,6 +35,8 @@ class TotalTypeAbonementBuilder implements IBuilder
 
 
     /**
+     * Total of the Abonement inserted in LTA.
+     * (VT+VD+ZT+ZD+MT+MD+AT+AD+DT+DD+FT+FD+BT+BD)
      * @param $totalTitleAboLTA
      * @return $this
      */

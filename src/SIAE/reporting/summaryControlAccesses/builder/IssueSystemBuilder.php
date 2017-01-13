@@ -18,6 +18,7 @@ class IssueSystemBuilder implements IBuilder
     }
 
     /**
+     * Code of the issuing system provided by SIAE.
      * @param $code
      * @return $this
      */
@@ -28,7 +29,8 @@ class IssueSystemBuilder implements IBuilder
     }
 
     /**
-     * @param $titles
+     * Titles children.
+     * @param Title[] $titles
      * @return $this
      */
     public function titles($titles)
@@ -39,7 +41,8 @@ class IssueSystemBuilder implements IBuilder
     }
 
     /**
-     * @param $abonements
+     * Abonement children.
+     * @param Abonement[] $abonements
      * @return $this
      */
     public function abonements($abonements)

@@ -3,59 +3,59 @@
 namespace SIAE\common\builder;
 
 
-use SIAE\common\model\NulledSubscriptions;
-use SIAE\common\model\Subscriptions;
+use SIAE\common\model\NulledAbonements;
+use SIAE\common\model\Abonements;
 use SIAE\common\model\Turn;
 
-class SubscriptionsBuilder implements IBuilder
+class AbonementBuilder implements IBuilder
 {
     /**
-     * @var Subscriptions
+     * @var Abonements
      */
-    private $subscriptions;
+    private $abonement;
 
     public function __construct()
     {
-        $this->subscriptions = new Subscriptions();
+        $this->abonement = new Abonements();
     }
 
     /**
      *
      * Example:
      *
-     * F - Fisso (fixed) (default) This subscription is linked to a specific event.
+     * F - Fisso (fixed) (default) This abonement is linked to a specific event.
      * L - Libero (free) is a free to choose Ticket for which event you want to attend.
      *
      * @param String $turn
-     * @return SubscriptionsBuilder
+     * @return AbonementBuilder
      */
     public function turn($turn)
     {
-        $this->subscriptions->setTurn(new Turn($turn));
+        $this->abonement->setTurn(new Turn($turn));
         return $this;
     }
 
 
     /**
      * @param mixed $code
-     * @return $this SubscriptionsBuilders
+     * @return $this AbonementsBuilders
      */
     public function code($code)
     {
-        $this->subscriptions->setCode($code);
+        $this->abonement->setCode($code);
         return $this;
     }
 
     /**
-     * Untill which date the subscription is valid.
-     * (last event(date) you can get access to with this subscription)
+     * Untill which date the abonement is valid.
+     * (last event(date) you can get access to with this abonement)
      *
      * @param mixed $validity format (YYYYMMDD)
-     * @return $this SubscriptionsBuilders
+     * @return $this AbonementsBuilders
      */
     public function validity($validity)
     {
-        $this->subscriptions->setValidity($validity);
+        $this->abonement->setValidity($validity);
         return $this;
     }
 
@@ -63,11 +63,11 @@ class SubscriptionsBuilder implements IBuilder
      * Accepted values are I (entertainment) or S (of only show).
      * The taxation depends on it.
      * @param mixed $taxationType
-     * @return $this SubscriptionsBuilders
+     * @return $this AbonementsBuilders
      */
     public function taxationType($taxationType)
     {
-        $this->subscriptions->setTaxationType($taxationType);
+        $this->abonement->setTaxationType($taxationType);
         return $this;
     }
 
@@ -90,7 +90,7 @@ class SubscriptionsBuilder implements IBuilder
      */
     public function orderCode($orderCode)
     {
-        $this->subscriptions->setOrderCode($orderCode);
+        $this->abonement->setOrderCode($orderCode);
         return $this;
     }
 
@@ -104,49 +104,49 @@ class SubscriptionsBuilder implements IBuilder
      * TC - Tourist Card
      * Find out more in the TAB 3.
      * @param mixed $titleType
-     * @return $this SubscriptionsBuilders
+     * @return $this AbonementsBuilders
      */
     public function titleType($titleType)
     {
-        $this->subscriptions->setTitleType($titleType);
+        $this->abonement->setTitleType($titleType);
         return $this;
     }
 
     /**
      * @param mixed $amountOfValidatedEvent
-     * @return $this SubscriptionsBuilders
+     * @return $this AbonementsBuilders
      */
     public function amountOfValidatedEvent($amountOfValidatedEvent)
     {
-        $this->subscriptions->setAmountOfValidatedEvent($amountOfValidatedEvent);
+        $this->abonement->setAmountOfValidatedEvent($amountOfValidatedEvent);
         return $this;
     }
 
     /**
-     * @param $releasedSubscriptions
-     * @return $this SubscriptionsBuilders
+     * @param $issuedAbonements
+     * @return $this AbonementsBuilders
      */
-    public function releasedSubscriptions($releasedSubscriptions)
+    public function issuedAbonements($issuedAbonements)
     {
-        $this->subscriptions->setReleasedSubscriptions($releasedSubscriptions);
+        $this->abonement->setReleasedAbonements($issuedAbonements);
         return $this;
     }
 
     /**
-     * @param NulledSubscriptions $nulledSubscriptions
-     * @return $this SubscriptionsBuilders
+     * @param NulledAbonements $nulledAbonements
+     * @return $this AbonementsBuilders
      */
-    public function nulledSubscriptions($nulledSubscriptions)
+    public function nulledAbonements($nulledAbonements)
     {
-        $this->subscriptions->setNulledSubscriptions($nulledSubscriptions);
+        $this->abonement->setNulledAbonements($nulledAbonements);
         return $this;
     }
 
     /**
-     * @return Subscriptions
+     * @return Abonements
      */
     public function build()
     {
-        return $this->subscriptions;
+        return $this->abonement;
     }
 }

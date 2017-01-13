@@ -10,7 +10,7 @@ use JMS\Serializer\Annotation\XmlList;
 class Organizer
 {
     /** @SerializedName("Denominazione") */
-    private $classification;
+    private $denomination;
     /** @SerializedName("CodiceFiscale") */
     private $fiscalCode;
     /** @SerializedName("TipoOrganizzatore") */
@@ -20,22 +20,22 @@ class Organizer
      */
     private $events;
     /** @SerializedName("Abbonamenti") */
-    private $subscriptions;
+    private $abonements;
 
     /**
      * @return mixed
      */
-    public function getClassification()
+    public function getDenomination()
     {
-        return $this->classification;
+        return $this->denomination;
     }
 
     /**
-     * @param mixed $classification
+     * @param mixed $denomination
      */
-    public function setClassification($classification)
+    public function setDenomination($denomination)
     {
-        $this->classification = $classification;
+        $this->denomination = $denomination;
     }
 
     /**
@@ -91,19 +91,19 @@ class Organizer
     /**
      * @return mixed
      */
-    public function getSubscriptions()
+    public function getAbonements()
     {
-        return $this->subscriptions;
+        return $this->abonements;
     }
 
     /**
-     * Subscriptions are a set of information on
+     * Abonements are a set of information on
      *
      *
-     * @param mixed $subscriptions
+     * @param mixed $abonements
      */
-    public function setSubscriptions($subscriptions)
+    public function setAbonements($abonements)
     {
-        $this->subscriptions = $subscriptions;
+        $this->abonements = $abonements;
     }
 }

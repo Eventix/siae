@@ -18,6 +18,7 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Fiscal code of the organizer.
      * @param $fiscalCodeOrganizer
      * @return $this
      */
@@ -41,6 +42,11 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Only for the cinema.
+     * Accepted values are:
+     * E - Essay
+     * P - Parrocchiale (Church related)
+     * G - Generico (generic)
      * @param $typeOrganizer
      * @return $this
      */
@@ -68,6 +74,8 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Percentage representing the proportion
+     * between entertainment and show.
      * @param $entertainmentEffect
      * @return $this
      */
@@ -79,6 +87,7 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Name or denomination of the place hosting the event.
      * @param $localDenomination
      * @return $this
      */
@@ -103,10 +112,12 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Event date.
+     * Format is YYYYMMDD.
      * @param $date
      * @return $this
      */
-    public function date($date)
+    public function eventDate($date)
     {
         $this->event->setDate($date);
         return $this;
@@ -114,10 +125,12 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Event time.
+     * Format is HHMM.
      * @param $time
      * @return $this
      */
-    public function time($time)
+    public function eventTime($time)
     {
         $this->event->setTime($time);
         return $this;
@@ -125,6 +138,10 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Genre of the event.
+     * See TAB1 in AppMisuratoriFiscali.pdf
+     * E.G:
+     * cinema, teatro, calcio...
      * @param $genreType
      * @return $this
      */
@@ -136,6 +153,7 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Title of the event.
      * @param $title
      * @return $this
      */
@@ -147,6 +165,7 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Author of the event.
      * @param $author
      * @return $this
      */
@@ -157,6 +176,7 @@ class EventBuilder implements IBuilder
     }
 
     /**
+     * Name of the band, theater group, orchestra...
      * @param string $performer
      * @return $this
      */
@@ -168,6 +188,7 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Movie nationality.
      * @param $movieNationality
      * @return $this
      */
@@ -179,6 +200,8 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Only for cinema and theatre.
+     * Number of works (masterpieces) presented.
      * @param $amountOfRepresentedWorks
      * @return $this
      */
@@ -190,6 +213,7 @@ class EventBuilder implements IBuilder
 
 
     /**
+     * Code of the issuing system provided by SIAE.
      * @param $issueSystem
      * @return $this
      */

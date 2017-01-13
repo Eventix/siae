@@ -20,7 +20,8 @@ class AbonementBuilder implements IBuilder
 
 
     /**
-     * @param $quantityEnabledEvents
+     * Number of events the ticket gives the opportunity to attend.
+     * @param int $quantityEnabledEvents
      * @return $this
      */
     public function quantityEnabledEvents($quantityEnabledEvents)
@@ -31,6 +32,9 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Day corresponding to the last day on which it is possible to
+     * take advantage of the abonement.
+     * Format is YYYYMMDD.
      * @param $validity
      * @return $this
      */
@@ -42,6 +46,8 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Rateo.
+     * // TODO ask regoli
      * @param $accrual
      * @return $this
      */
@@ -53,6 +59,8 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Rate intrattenimento
+     * // TODO ask regoli
      * @param $entertainmentAccrual
      * @return $this
      */
@@ -64,6 +72,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * VAT related to rateo.
      * @param $VATAccrual
      * @return $this
      */
@@ -75,6 +84,10 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Total amount for the operations.
+     * Includes VAT and eventually an extra fee referring to the
+     * abonement code.
+     * It does not include the preSale.
      * @param $gross
      * @return $this
      */
@@ -85,6 +98,9 @@ class AbonementBuilder implements IBuilder
     }
 
     /**
+     * Amount related to the preSale including VAT.
+     * If that is referring to nulled access titles or abonements
+     * it has to be evaluated only if the preSale amount was reimbursed.
      * @param $preSale
      * @return $this
      */
@@ -96,6 +112,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * VAT referring to the gross amount.
      * @param $VAT
      * @return $this
      */
@@ -107,6 +124,10 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * VAT applied to preSale.
+     * If that is referred to tickets that were nulled,
+     * it has to be evaluated only if the preSale amount
+     * was reimbursed.
      * @param $preSaleVAT
      * @return $this
      */
@@ -118,6 +139,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Code provided by SIAE identifying the location.
      * @param $localCode
      * @return $this
      */
@@ -129,6 +151,8 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Event date.
+     * Format is YYYYMMDD.
      * @param $eventDate
      * @return $this
      */
@@ -140,6 +164,8 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Event time.
+     * Format is HHMM.
      * @param $eventTime
      * @return $this
      */
@@ -151,7 +177,9 @@ class AbonementBuilder implements IBuilder
 
 
     /**
-     *
+     * Event genre.
+     * It can be found in TAB 1, page 18,
+     * AppMisuratoriFiscali.pdf.
      * @param $genreType
      * @return $this
      */
@@ -163,6 +191,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Title of the event.
      * @param $title
      * @return $this
      */
@@ -174,6 +203,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Abonement code.
      * @param $abonementCode
      * @return $this
      */
@@ -185,6 +215,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Abonement code auto-incremented value.
      * @param $incrementedAbonementCounter
      * @return $this
      */
@@ -196,6 +227,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Fiscal code printed on the issued abonement.
      * @param $fiscalCode
      * @return $this
      */
@@ -207,6 +239,9 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * Gross value.
+     * Might be referring to the accrual (rateo) or
+     * at the titles issued with released VAT.
      * @param $notionalAmount
      * @return $this
      */
@@ -218,6 +253,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
+     * VAT referring to the notional amount.
      * @param $notionalVAT
      * @return $this
      */
@@ -227,8 +263,22 @@ class AbonementBuilder implements IBuilder
         return $this;
     }
 
+    /**
+     * VAT referring to the preSale.
+     * @param $vatPreSale
+     */
+    public function VATpreSale($vatPreSale)
+    {
+        $this->abonement->setPreSaleVAT($vatPreSale);
+    }
+
 
     /**
+     * Example:
+     *
+     * F - Fisso (fixed) (default) This abonement is linked to a specific event.
+     * L - Libero (free) is a free to choose Ticket for which event you want to attend.
+     *
      * @param $turn
      * @return $this
      */

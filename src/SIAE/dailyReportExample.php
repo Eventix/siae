@@ -15,10 +15,10 @@ $placeBuilder = new \SIAE\common\builder\PlaceBuilder();
 $multiGenreBuilder = new \SIAE\common\builder\MultipleGenreBuilder();
 $artworkTitleBuilder = new \SIAE\common\builder\ArtworksTitlesBuilder();
 $placeOrderBuilder = new \SIAE\common\builder\PlaceOrderBuilder();
-$ticketSubscriptionBuilder = new \SIAE\common\builder\TicketSubscriptionBuilder();
-$subscriptionsBuilder = new \SIAE\common\builder\SubscriptionsBuilder();
-$releasedSubscriptionsBuilder = new \SIAE\common\builder\ReleasedSubscriptionsBuilder();
-$nulledSubscriptionsBuilder = new \SIAE\common\builder\NulledSubscriptionsBuilder();
+$ticketSubscriptionBuilder = new \SIAE\common\builder\TicketAbonementsBuilder();
+$abonementBuilder = new \SIAE\common\builder\AbonementBuilder();
+$releasedSubscriptionsBuilder = new \SIAE\common\builder\IssuedAbonementsBuilder();
+$nulledSubscriptionsBuilder = new \SIAE\common\builder\NulledAbonementsBuilder();
 
 // Start creating the objects from most nested elements
 $artworkTitles = $artworkTitleBuilder
@@ -113,41 +113,42 @@ $nulledSubscriptions = $nulledSubscriptionsBuilder
     ->VATpreSale(0)
     ->build();
 
-$subscriptions = [
-    $subscriptionsBuilder
-        ->code("CODICE ABBONAMENTO") // Code for the Subscription Type (type of Abbo)
-        ->validity(20160901) // Clear
-        ->taxationType("") // TODO: Add explanation
-        ->turn("F") // TODO: Explain so that its clear for Chris :)
-        ->orderCode("UN") // Clear
-        ->titleType("I1") // Clear
-        ->amountOfValidatedEvent(1) // clear
-        ->releasedSubscriptions($releasedSubscriptions) // TODO: Released is issued
-        ->nulledSubscriptions($nulledSubscriptions) // TODO: nulled is refunded / cancelled.
-        ->build()];
+$abonements = [
+    $abonementBuilder
+        ->code("CODICE ABBONAMENTO")// Code for the Subscription Type (type of Abbo)
+        ->validity(20160901)// Clear
+        ->taxationType("")// TODO: Add explanation
+        ->turn("F")
+        ->orderCode("UN")// Clear
+        ->titleType("I1")// Clear
+        ->amountOfValidatedEvent(1)// clear
+        ->issuedAbonements($releasedSubscriptions)
+        ->nulledAbonements($nulledSubscriptions)
+        ->build()
+];
 
 $organizer = $organizerBuilder
-    ->classification("SALE") // TODO: rename classification to denomiation (name)
-    ->organizerType("E") // Clear, only need for Cinema
-    ->fiscalCode("03566320176") // clear
+    ->denomination("SALE")
+    ->organizerType("E")// Clear, only need for Cinema
+    ->fiscalCode("03566320176")// clear
     ->events($events)
-    ->subscriptions($subscriptions)
+    ->abonements($abonements)
     ->build();
 
 $companyHolder = $companyHolderBuilder
-    ->classification("Sample") // Clear
-    ->distributionSystem("Sample") // Clear
-    ->fiscalCode("dsadsa") // Clear
+    ->classification("Sample")// Clear
+    ->distributionSystem("Sample")// Clear
+    ->fiscalCode("dsadsa")// Clear
     ->build();
 
 $dailyReport = $dailyReportBuilder
-    ->companyHolder($companyHolder) // Clear
-    ->organizer($organizer) // Clear
-    ->date("14213") // Clear
-    ->generationIncrementedNumber("2") // Clear
-    ->generationTime("150057") // Clear
-    ->creationDate("124145") // clear
-    ->replacement("N") // TODO: Asked
+    ->companyHolder($companyHolder)// Clear
+    ->organizer($organizer)// Clear
+    ->date("14213")// Clear
+    ->generationIncrementedNumber("2")// Clear
+    ->generationTime("150057")// Clear
+    ->creationDate("124145")// clear
+    ->replacement("N")// TODO: Asked
     ->build();
 
 // JMS init

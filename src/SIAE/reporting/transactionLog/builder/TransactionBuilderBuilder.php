@@ -272,12 +272,12 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
-     * @param $ticketSubscription
+     * @param $ticketAbonement
      * @return $this
      */
-    public function ticketSubscription($ticketSubscription)
+    public function ticketAbonement($ticketAbonement)
     {
-        $this->transaction->setTicketSubscription($ticketSubscription);
+        $this->transaction->setTicketAbonement($ticketAbonement);
         return $this;
     }
 

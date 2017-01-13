@@ -6,7 +6,7 @@ namespace SIAE\common\builder;
 use SIAE\common\model\Event;
 use SIAE\common\model\Organizer;
 use SIAE\common\model\OrganizerType;
-use SIAE\common\model\Subscriptions;
+use SIAE\common\model\Abonements;
 
 class OrganizerBuilder implements IBuilder
 {
@@ -22,12 +22,12 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
-     * @param mixed $classification
+     * @param mixed $denomination
      * @return OrganizerBuilder
      */
-    public function classification($classification)
+    public function denomination($denomination)
     {
-        $this->organizer->setClassification($classification);
+        $this->organizer->setDenomination($denomination);
         return $this;
     }
 
@@ -65,12 +65,13 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
-     * @param Subscriptions[] $subscriptions
+     * // TODO: fix the comment
+     * @param Abonements[] $abonements
      * @return OrganizerBuilder
      */
-    public function subscriptions($subscriptions)
+    public function abonements($abonements)
     {
-        $this->organizer->setSubscriptions($subscriptions);
+        $this->organizer->setAbonements($abonements);
         return $this;
     }
 

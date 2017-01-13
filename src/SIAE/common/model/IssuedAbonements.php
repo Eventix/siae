@@ -7,7 +7,7 @@ use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
 
 /** @XmlRoot("AbbonamentiEmessi") */
-class ReleasedSubscriptions
+class IssuedAbonements
 {
     /** @SerializedName("TipoTitolo") */
     private $type;
