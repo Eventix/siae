@@ -59,7 +59,7 @@ class AbonementBuilder implements IBuilder
 
 
     /**
-     * Rate intrattenimento
+     * Rateo intrattenimento
      * // TODO ask regoli
      * @param $entertainmentAccrual
      * @return $this

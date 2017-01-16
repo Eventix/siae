@@ -117,6 +117,7 @@ class LTAEventBuilder implements IBuilder
     }
 
     /**
+     *
      * @param []AccessTitles
      * @return $this
      */

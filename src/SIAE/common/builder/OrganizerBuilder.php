@@ -65,7 +65,7 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
-     * // TODO: fix the comment
+     * Abbonamenti children element
      * @param Abonements[] $abonements
      * @return OrganizerBuilder
      */

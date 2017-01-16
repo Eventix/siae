@@ -19,7 +19,9 @@ class Organizer
      * @XmlList(inline = true, entry="Evento")
      */
     private $events;
-    /** @SerializedName("Abbonamenti") */
+    /**
+     * @XmlList(inline = true, entry="Abbonamenti")
+     */
     private $abonements;
 
     /**

@@ -64,6 +64,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Date on which the title was released.
      * @param $issuedDate
      * @return $this
      */
@@ -74,6 +75,8 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Time at which the title was released.
+     * Format is HHMM.
      * @param $issuedTime
      * @return $this
      */
@@ -96,7 +99,8 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
-     * Time at which this was insterted in "ListaTitoliEmessi" - "released titles list"
+     * Time at which this was inserted in
+     * "ListaTitoliEmessi" - "released titles list"
      * Format is HHMMSS
      * @param $ltaTime
      * @return $this
@@ -123,6 +127,19 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Identifier of the area assigned for the event.
+     * The allowed values should be extracted from Misuratori Fiscali doc (AppMisuratoriFiscali.pdf)
+     * Table 2 page 20.
+     * In case the area was not found in the table, a unique one should
+     * be assigned instead.
+     * (Unique meaning that no two areas with such code exists)
+     * E.G.:
+     * AA - Ring A
+     * AB - Ring B
+     * ...
+     *
+     * Default: (use custom section area code)
+     *
      * @param $orderCode
      * @return $this
      */
@@ -133,6 +150,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     * Gross value.
      * @param $gross
      * @return $this
      */
@@ -143,6 +161,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
+     *
      * @param $abonement
      * @return $this
      */

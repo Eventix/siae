@@ -33,7 +33,7 @@ class TicketAbonementBuilder implements IBuilder
 
     /**
      *
-     * // TODO missing on the appMisuratoriFiscali
+     * // TODO: missing on the appMisuratoriFiscali ask regoli
      *
      * @param $code
      * @return $this
@@ -72,6 +72,9 @@ class TicketAbonementBuilder implements IBuilder
 
 
     /**
+     * Event genre.
+     * It can be found in TAB 1, page 18,
+     * AppMisuratoriFiscali.pdf.
      * @param $genreType
      * @return $this
      */
@@ -83,18 +86,21 @@ class TicketAbonementBuilder implements IBuilder
 
 
     /**
+     * Abonement title.
      * @param $title
      * @return $this
      */
     public function title($title)
     {
-        $this->ticketAbonement->setTitolo($title);
+        $this->ticketAbonement->setTitle($title);
         return $this;
 
     }
 
 
     /**
+     * Code of the place where the event takes place.
+     * Provided by SIAE.
      * @param $localCode
      * @return $this
      */
@@ -106,6 +112,7 @@ class TicketAbonementBuilder implements IBuilder
 
 
     /**
+     * Automatically incremented counter.
      * @param $incrementedAbonementCounter
      * @return $this
      */
@@ -116,6 +123,7 @@ class TicketAbonementBuilder implements IBuilder
     }
 
     /**
+     * Fiscal code connected to the organizer.
      * @param $fiscalCode
      * @return $this
      */
@@ -127,6 +135,8 @@ class TicketAbonementBuilder implements IBuilder
 
 
     /**
+     * // TODO: Ask regoli
+     * Gross amount. It is related to the rateo
      * @param $notionalAmount
      * @return $this
      */
@@ -138,6 +148,7 @@ class TicketAbonementBuilder implements IBuilder
 
 
     /**
+     * VAT related to the notional amount.
      * @param $notionalVAT
      * @return $this
      */

@@ -33,6 +33,7 @@ class TransactionBuilder implements IBuilder
 
 
     /**
+     * Fiscal code of the owner.
      * @param $CFOwner
      */
     public function cfOwner($CFOwner)
@@ -42,11 +43,18 @@ class TransactionBuilder implements IBuilder
 
 
     /**
+     * // TODO ask regoli
+     * Information regarding whether the issuing
+     * happens having released the VAT.
+     * Allowed values are
+     * - N (normal - VAT was not released)
+     * - F (VAT was released and receipt was made)
+     * - B (VAT was released upon making an abonement)
      * @param $VATreleased
      */
     public function VATreleased($VATreleased)
     {
-        $this->VATreleased = $VATreleased;
+        $this->transaction->setVATreleased($VATreleased);
     }
 
 
@@ -74,6 +82,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * SIAE code of the issuing system.
      * @param $issuingSystem
      * @return $this
      */
@@ -84,6 +93,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Number of the activation card released by SIAE.
      * @param $activationCard
      * @return $this
      */
@@ -94,6 +104,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Safety seal created for each transaction.
      * @param $fiscalSigilloCode
      * @return $this
      */
@@ -128,6 +139,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Unique-auto-incremented number.
      * @param $incrementedCounter
      * @return $this
      */
@@ -153,6 +165,18 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Identifier of the area assigned for the event.
+     * The allowed values should be extracted from Misuratori Fiscali doc (AppMisuratoriFiscali.pdf)
+     * Table 2 page 20.
+     * In case the area was not found in the table, a unique one should
+     * be assigned instead.
+     * (Unique meaning that no two areas with such code exists)
+     * E.G.:
+     * AA - Ring A
+     * AB - Ring B
+     * ...
+     *
+     * Default: (use custom section area code)
      *
      * @param $orderCode
      * @return $this
@@ -181,6 +205,8 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Assigned sit code (E.G: row: H number: 13,
+     * therefore the code is H13)
      * @param $place
      * @return $this
      */
@@ -191,6 +217,8 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Code of the place that made the transaction.
+     * It has to be reported on the ticket.
      * @param $sellingPlace
      * @return $this
      */
@@ -201,6 +229,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * // TODO ask regoli
      * @param $prePrint
      * @return $this
      */
@@ -211,6 +240,8 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * // TODO ask regoli
+     * Taxable income based on the entertainment related to the access titles.
      * @param $entertainmentTaxableIncome
      * @return $this
      */
@@ -221,6 +252,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * Unique number of the nulled title.
      * @param $nulledOriginal
      * @return $this
      */
@@ -231,6 +263,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     * // TODO ask regoli
      * @param $nulledOriginalCard
      * @return $this
      */
@@ -242,6 +275,7 @@ class TransactionBuilder implements IBuilder
 
 
     /**
+     * // TODO ask regoli
      * @param $nulledCausal
      * @return $this
      */
@@ -252,6 +286,7 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
+     *
      * @param $accessTitle AccessTitle
      * @return $this
      */

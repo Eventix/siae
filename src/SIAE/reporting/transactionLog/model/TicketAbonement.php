@@ -19,7 +19,7 @@ class TicketAbonement
     /** @SerializedName("TipoGenere") */
     private $genreType;
     /** @SerializedName("Titolo") */
-    private $titolo;
+    private $title;
     /** @SerializedName("CodiceLocale") */
     private $localCode;
     /** @SerializedName("ProgressivoAbbonamento") */
@@ -114,17 +114,17 @@ class TicketAbonement
     /**
      * @return mixed
      */
-    public function getTitolo()
+    public function getTitle()
     {
-        return $this->titolo;
+        return $this->title;
     }
 
     /**
      * @param mixed $titolo
      */
-    public function setTitolo($titolo)
+    public function setTitle($titolo)
     {
-        $this->titolo = $titolo;
+        $this->title = $titolo;
     }
 
     /**

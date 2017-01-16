@@ -88,7 +88,7 @@ class Transaction
     private $titleType;
     /**
      * @XmlAttribute
-     * @SerializedName("OrderCode")
+     * @SerializedName("CodiceOrdine")
      * @var string
      */
     private $orderCode;
