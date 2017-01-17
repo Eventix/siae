@@ -1,7 +1,7 @@
 <?php
 
 
-namespace SIAE\reporting\transactionLogs;
+namespace SIAE\reporting\transactionLog;
 
 use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\XmlList;

@@ -3,7 +3,7 @@
 namespace SIAE\reporting\transactionLog\builder;
 
 use SIAE\common\builder\IBuilder;
-use SIAE\reporting\dailyTransactionLogs\model\AccessTitle;
+use SIAE\reporting\transactionLog\model\AccessTitle;
 use SIAE\reporting\transactionLog\model\Transaction;
 
 class TransactionBuilder implements IBuilder
@@ -35,10 +35,12 @@ class TransactionBuilder implements IBuilder
     /**
      * Fiscal code of the owner.
      * @param $CFOwner
+     * @return $this
      */
     public function cfOwner($CFOwner)
     {
         $this->transaction->setCFOwner($CFOwner);
+        return $this;
     }
 
 
@@ -51,10 +53,12 @@ class TransactionBuilder implements IBuilder
      * - F (VAT was released and receipt was made)
      * - B (VAT was released upon making an abonement)
      * @param $VATreleased
+     * @return $this
      */
     public function VATreleased($VATreleased)
     {
         $this->transaction->setVATreleased($VATreleased);
+        return $this;
     }
 
 

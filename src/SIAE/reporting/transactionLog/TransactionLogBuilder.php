@@ -1,13 +1,15 @@
 <?php
 
-namespace SIAE\reporting\transactionLogs;
+namespace SIAE\reporting\transactionLog;
+
+use SIAE\common\builder\IBuilder;
 
 /**
  * Builder for the LTA SIAE XML mapping.
  * Log containing all the transactions in relation to the
  * the tickets sold.
  */
-class TransactionLogBuilder
+class TransactionLogBuilder implements IBuilder
 {
     /**
      * @var TransactionLog
@@ -27,5 +29,13 @@ class TransactionLogBuilder
     {
         $this->transactionLog->setTransactions($transactions);
         return $this;
+    }
+
+    /**
+     * @return TransactionLog returns the newly built object
+     */
+    public function build()
+    {
+        return $this->transactionLog;
     }
 }

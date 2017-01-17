@@ -9,7 +9,7 @@ use SIAE\common\validator\DTDValidator;
  * Class LogValidator
  * @package SIAE\validator
  */
-class LogValidator
+class TransactionLogValidator
 {
     /**
      * @var DTDValidator

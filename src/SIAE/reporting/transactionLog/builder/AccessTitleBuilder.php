@@ -2,10 +2,11 @@
 
 namespace SIAE\reporting\transactionLog\builder;
 
+use SIAE\common\builder\IBuilder;
 use SIAE\reporting\transactionLog\model\AccessTitle;
 use SIAE\reporting\transactionLog\model\Complementary;
 
-class AccessTitleBuilder
+class AccessTitleBuilder implements IBuilder
 {
     /**
      * @var AccessTitle
@@ -175,4 +176,11 @@ class AccessTitleBuilder
     }
 
 
+    /**
+     * @return AccessTitle returns the newly built object
+     */
+    public function build()
+    {
+        return $this->accessTitle;
+    }
 }
