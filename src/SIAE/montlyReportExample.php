@@ -116,7 +116,8 @@ $nulledSubscriptions = [
         ->build()
 ];
 
-$subscriptions = $subscriptionsBuilder
+$subscriptions = [
+    $subscriptionsBuilder
     ->code("CODICE ABBONAMENTO")
     ->validity(20160901)
     ->taxationType("")
@@ -126,7 +127,8 @@ $subscriptions = $subscriptionsBuilder
     ->amountOfValidatedEvent(1)
     ->issuedAbonements($releasedSubscriptions)
     ->nulledAbonements($nulledSubscriptions)
-    ->build();
+        ->build()
+];
 
 $organizer = $organizerBuilder
     ->denomination("SALE")
@@ -160,14 +162,9 @@ $serializedXML = $serializer->serialize($monthlyReport, 'xml');
 echo $serializedXML;
 
 
-// Test to try it with the provided sample files
-// - unfortunately it also fails
-//$serializedXML = file_get_contents("templates/RMG_2015_09_00_001.xml");
-
-
 // TODO: make the example pass the DTD validation
 // Validate against DTD
 $monthlyReportValidator = new \SIAE\validator\MonthlyReportValidator();
-echo $monthlyReportValidator->validate($serializedXML);
+$monthlyReportValidator->validate($serializedXML);
 
 ?>

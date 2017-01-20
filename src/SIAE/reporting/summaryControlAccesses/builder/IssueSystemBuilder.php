@@ -1,8 +1,11 @@
 <?php
 
-namespace SIAE\reporting\summaryControlAccesses\model;
+namespace SIAE\reporting\summaryControlAccesses\builder;
 
 use SIAE\common\builder\IBuilder;
+use SIAE\reporting\summaryControlAccesses\model\Abonement;
+use SIAE\reporting\summaryControlAccesses\model\IssueSystem;
+use SIAE\reporting\summaryControlAccesses\model\Title;
 
 class IssueSystemBuilder implements IBuilder
 {

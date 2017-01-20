@@ -1,7 +1,8 @@
 <?php
 
-namespace SIAE\reporting\summaryControlAccesses\model;
+namespace SIAE\reporting\summaryControlAccesses\builder;
 
+use SIAE\reporting\summaryControlAccesses\model\CompanyHolder;
 use SIAE\common\builder\IBuilder;
 
 class CompanyHolderBuilder implements IBuilder

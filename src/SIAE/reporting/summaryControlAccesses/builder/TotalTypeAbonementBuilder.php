@@ -1,8 +1,9 @@
 <?php
 
-namespace SIAE\reporting\summaryControlAccesses\model;
+namespace SIAE\reporting\summaryControlAccesses\builder;
 
 use SIAE\common\builder\IBuilder;
+use SIAE\reporting\summaryControlAccesses\model\TotalTypeAbonement;
 
 class TotalTypeAbonementBuilder implements IBuilder
 {

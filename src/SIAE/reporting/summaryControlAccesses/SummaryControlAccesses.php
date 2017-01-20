@@ -5,6 +5,10 @@ namespace SIAE\reporting\summaryControlAccesses;
 use SIAE\reporting\summaryControlAccesses\model\CompanyHolder;
 use SIAE\reporting\summaryControlAccesses\model\Event;
 
+use JMS\Serializer\Annotation\XmlRoot;
+use JMS\Serializer\Annotation\SerializedName;
+use JMS\Serializer\Annotation\XmlAttribute;
+
 /** @XmlRoot("RiepilogoControlloAccessi") */
 class SummaryControlAccesses
 {

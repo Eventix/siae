@@ -97,6 +97,7 @@ $serializedXML = $serializer->serialize($transactionLog, 'xml');
 
 echo $serializedXML;
 
+// Validate against DTD
 $logValidator = new \SIAE\validator\TransactionLogValidator();
 $logValidator->validate($serializedXML);
 

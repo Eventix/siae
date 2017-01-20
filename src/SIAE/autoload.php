@@ -1,5 +1,7 @@
 <?php
-// Some vendor files cannot be easily auto loaded.
+// Requiring some dependency files from the JMS package,
+// since vendor files cannot be easily auto loaded.
+
 
 require("../../vendor/autoload.php");
 
@@ -9,9 +11,8 @@ $packages = [
     "common/builder",
     "reporting/dailyReport",
     "reporting/monthlyReport",
-    "reporting/dailyTransactionLogs/builder",
-    "reporting/dailyTransactionLogs/model",
-    "reporting/dailyTransactionLogs"];
+    "reporting/dailyTransactionLogs",
+    "reporting/summaryControlAccesses"];
 
 foreach ($packages as $package) {
     foreach (glob(__DIR__ . DIRECTORY_SEPARATOR . $package . "/*.php") as $filename) {

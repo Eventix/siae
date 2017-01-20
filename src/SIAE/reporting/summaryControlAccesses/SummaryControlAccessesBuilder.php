@@ -19,6 +19,11 @@ class SummaryControlAccessesBuilder implements IBuilder
     public $summaryControlAccesses;
 
 
+    public function __construct()
+    {
+        $this->summaryControlAccesses = new SummaryControlAccesses();
+    }
+
     /**
      * @param $owner
      * @return $this
@@ -37,6 +42,18 @@ class SummaryControlAccessesBuilder implements IBuilder
     public function event($event)
     {
         $this->summaryControlAccesses->setEvents($event);
+        return $this;
+    }
+
+
+    /**
+     * Specifies whether this RCA is the replacement of another one.
+     * @param $replacementValue
+     * @return $this
+     */
+    public function replacement($replacementValue)
+    {
+        $this->summaryControlAccesses->setReplacement($replacementValue);
         return $this;
     }
 

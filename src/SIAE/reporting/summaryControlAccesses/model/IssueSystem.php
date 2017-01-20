@@ -4,6 +4,7 @@ namespace SIAE\reporting\summaryControlAccesses\model;
 
 use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
+use JMS\Serializer\Annotation\XmlList;
 
 /** @XmlRoot("SistemaEmissione") */
 class IssueSystem
@@ -14,7 +15,7 @@ class IssueSystem
      */
     private $code;
     /**
-     * @SerializedName("Titoli")
+     * @XmlList(inline = true, entry = "Titoli")
      * @var []Title
      */
     private $titles;

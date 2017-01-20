@@ -1,8 +1,9 @@
 <?php
 
-namespace SIAE\reporting\summaryControlAccesses\model;
+namespace SIAE\reporting\summaryControlAccesses\builder;
 
 use SIAE\common\builder\IBuilder;
+use SIAE\reporting\summaryControlAccesses\model\TotalTypeTitle;
 
 class TotalTypeTitleBuilder implements IBuilder
 {
@@ -34,7 +35,7 @@ class TotalTypeTitleBuilder implements IBuilder
      * @param $totalTraditionalTitlesN int
      * @return $this
      */
-    public function totalTraditionalTitlesN($totalTraditionalTitlesN)
+    public function totalTraditionalTitlesNotValidated($totalTraditionalTitlesN)
     {
         $this->totalTypeTitle->setTotalTraditionalTitlesN($totalTraditionalTitlesN);
         return $this;
@@ -46,7 +47,7 @@ class TotalTypeTitleBuilder implements IBuilder
      * @param $totalDigitalAccessTitlesN int
      * @return $this
      */
-    public function totalDigitalAccessTitlesN($totalDigitalAccessTitlesN)
+    public function totalDigitalAccessTitlesNotValidated($totalDigitalAccessTitlesN)
     {
         $this->totalTypeTitle->setTotalDigitalAccessTitlesN($totalDigitalAccessTitlesN);
         return $this;
@@ -207,7 +208,7 @@ class TotalTypeTitleBuilder implements IBuilder
      * @param $totalType string
      * @return $this
      */
-    public function totalType($totalType)
+    public function titleType($totalType)
     {
         $this->totalTypeTitle->setTotalType($totalType);
         return $this;

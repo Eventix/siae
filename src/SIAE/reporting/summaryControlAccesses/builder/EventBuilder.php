@@ -1,8 +1,9 @@
 <?php
 
-namespace SIAE\reporting\summaryControlAccesses\model;
+namespace SIAE\reporting\summaryControlAccesses\builder;
 
 use SIAE\common\builder\IBuilder;
+use SIAE\reporting\summaryControlAccesses\model\Event;
 
 class EventBuilder implements IBuilder
 {
@@ -50,7 +51,7 @@ class EventBuilder implements IBuilder
      * @param $typeOrganizer
      * @return $this
      */
-    public function typeOrganizer($typeOrganizer)
+    public function organizerType($typeOrganizer)
     {
         $this->event->setTypeOrganizer($typeOrganizer);
         return $this;
