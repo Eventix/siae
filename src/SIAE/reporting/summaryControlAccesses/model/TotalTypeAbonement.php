@@ -96,13 +96,13 @@ class TotalTypeAbonement
      * @SerializedName("TotaleTitoliAbbBLTradiz")
      * @var int
      */
-    private $totalTitlesTraditionalAbonementsBLD;
+    private $totalTitlesTraditionalBLD;
 
     /**
      * @SerializedName("TotaleTitoliAbbBLDigitali")
      * @var int
      */
-    private $totalTitlesAbonementDigitalBLD;
+    private $totalTitlesDigitalBLD;
 
     /**
      * @return string
@@ -331,32 +331,32 @@ class TotalTypeAbonement
     /**
      * @return int
      */
-    public function getTotalTitlesTraditionalAbonementsBLD()
+    public function getTotalTitlesTraditionalBLD()
     {
-        return $this->totalTitlesTraditionalAbonementsBLD;
+        return $this->totalTitlesTraditionalBLD;
     }
 
     /**
-     * @param int $totalTitlesTraditionalAbonementsBLD
+     * @param int $totalTitlesTraditionalBLD
      */
-    public function setTotalTitlesTraditionalAbonementsBLD($totalTitlesTraditionalAbonementsBLD)
+    public function setTotalTitlesTraditionalBLD($totalTitlesTraditionalBLD)
     {
-        $this->totalTitlesTraditionalAbonementsBLD = $totalTitlesTraditionalAbonementsBLD;
+        $this->totalTitlesTraditionalBLD = $totalTitlesTraditionalBLD;
     }
 
     /**
      * @return int
      */
-    public function getTotalTitlesAbonementDigitalBLD()
+    public function getTotalTitlesDigitalBLD()
     {
-        return $this->totalTitlesAbonementDigitalBLD;
+        return $this->totalTitlesDigitalBLD;
     }
 
     /**
-     * @param int $totalTitlesAbonementDigitalBLD
+     * @param int $totalTitlesDigitalBLD
      */
-    public function setTotalTitlesAbonementDigitalBLD($totalTitlesAbonementDigitalBLD)
+    public function setTotalTitlesDigitalBLD($totalTitlesDigitalBLD)
     {
-        $this->totalTitlesAbonementDigitalBLD = $totalTitlesAbonementDigitalBLD;
+        $this->totalTitlesDigitalBLD = $totalTitlesDigitalBLD;
     }
 }

@@ -20,7 +20,7 @@ class IssueSystem
      */
     private $titles;
     /**
-     * @SerializedName("Abbonamenti")
+     * @XmlList(inline = true, entry = "Abbonamenti")
      * @var []Abonement
      */
     private $abonements;

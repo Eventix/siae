@@ -3,19 +3,19 @@
 namespace SIAE\reporting\summaryControlAccesses\builder;
 
 use SIAE\common\builder\IBuilder;
-use SIAE\reporting\summaryControlAccesses\model\Abonement;
+use SIAE\reporting\summaryControlAccesses\model\Abonements;
 use SIAE\reporting\summaryControlAccesses\model\TotalTypeAbonement;
 
 class AbonementBuilder implements IBuilder
 {
     /**
-     * @var Abonement
+     * @var Abonements
      */
     private $abonement;
 
     public function __construct()
     {
-        $this->abonement = new Abonement();
+        $this->abonement = new Abonements();
     }
 
 
@@ -54,7 +54,7 @@ class AbonementBuilder implements IBuilder
     }
 
     /**
-     * @return Abonement returns the newly built object
+     * @return Abonements returns the newly built object
      */
     public function build()
     {

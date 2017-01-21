@@ -11,6 +11,35 @@ $titleBuilder = new \SIAE\reporting\summaryControlAccesses\builder\TitleBuilder(
 $totalTypeAbonementBuilder = new \SIAE\reporting\summaryControlAccesses\builder\TotalTypeAbonementBuilder();
 $totalTypeTitleBuilder = new \SIAE\reporting\summaryControlAccesses\builder\TotalTypeTitleBuilder();
 
+
+$totalTypeAbonement =
+    $totalTypeAbonementBuilder
+        ->totalAbonementType("I1")
+        ->totalTitleAboLTA(9)// Total, the sum of the following value should always equal this value.
+        ->totalTraditionalTitlesAboNotValidated(4)
+        ->totalDigitalAccessTitlesAboNotValidated(0)
+        ->totalAutomaticTraditionalAccessTitles(0)
+        ->totalAutomaticDigitalAccessTitles(3)
+        ->totalTitlesManualTraditionalAbonement(0)
+        ->totalTitlesManualDigitalAbonement(0)
+        ->totalTitlesTraditionalNulled(1)
+        ->totalTitlesDigitalNulled(1)
+        ->totalTitlesAbonementTraditionalBlocked(0)
+        ->totalTitlesAbonementDigitalBlocked(0)
+        ->totalTitlesTraditionalStolen(0)
+        ->totalTitlesDigitalStolen(0)
+        ->totalTitlesAbonementDigitalBL(0)// BL stands for blacklisted.
+        ->totalTitlesTraditionalAbonementsBL(0)
+        ->build();
+
+$abonements = [
+    $abonementBuilder
+        ->capacity(25000)
+        ->placeCode("UN")
+        ->totalAbonementTypes($totalTypeAbonement)
+        ->build()
+];
+
 $totalTitleType = $totalTypeTitleBuilder
     ->titleType("I1")
     ->totalTitleLTA(2)
@@ -65,6 +94,7 @@ $titles = [
 $issueSystem = $issueSystemBuilder
     ->code("P0001091")
     ->titles($titles)
+    ->abonements($abonements)
     ->build();
 
 $companyHolder = $companyHolderBuilder
@@ -91,7 +121,7 @@ $event = $eventBuilder
     ->title("Rainbow Magicland")
     ->author("Rainbow Magicland")
     ->performer("Rainbow Magicland Spa a socio unico")
-    ->movieNationality("DUTCH")
+    ->movieNationality("NL")
     ->amountOfRepresentedWorks(1)
     ->issueSystem($issueSystem)
     ->build();

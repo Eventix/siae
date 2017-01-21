@@ -54,7 +54,7 @@ class TotalTypeAbonementBuilder implements IBuilder
      * @param $totalTraditionalTitlesAboN
      * @return $this
      */
-    public function totalTraditionalTitlesAboN($totalTraditionalTitlesAboN)
+    public function totalTraditionalTitlesAboNotValidated($totalTraditionalTitlesAboN)
     {
         $this->totalTypeAbonement->setTotalTraditionalTitlesAboN($totalTraditionalTitlesAboN);
         return $this;
@@ -66,7 +66,7 @@ class TotalTypeAbonementBuilder implements IBuilder
      * @param $totalDigitalAccessTitlesAboN
      * @return $this
      */
-    public function totalDigitalAccessTitlesAboN($totalDigitalAccessTitlesAboN)
+    public function totalDigitalAccessTitlesAboNotValidated($totalDigitalAccessTitlesAboN)
     {
         $this->totalTypeAbonement->setTotalDigitalAccessTitlesAboN($totalDigitalAccessTitlesAboN);
         return $this;
@@ -140,7 +140,7 @@ class TotalTypeAbonementBuilder implements IBuilder
      */
     public function totalTitlesDigitalNulled($totalTitlesDigitalNulled)
     {
-        $this->totalTypeAbonement->setTotalDigitalAccessTitlesAboN($totalTitlesDigitalNulled);
+        $this->totalTypeAbonement->setTotalTitlesDigitalNulled($totalTitlesDigitalNulled);
         return $this;
     }
 
@@ -201,9 +201,9 @@ class TotalTypeAbonementBuilder implements IBuilder
      * @param $totalTitlesTraditionalAbonements
      * @return $this
      */
-    public function totalTitlesTraditionalAbonements($totalTitlesTraditionalAbonements)
+    public function totalTitlesTraditionalAbonementsBL($totalTitlesTraditionalAbonements)
     {
-        $this->totalTypeAbonement->setTotalTitlesTraditionalAbonementsBLD($totalTitlesTraditionalAbonements);
+        $this->totalTypeAbonement->setTotalTitlesTraditionalBLD($totalTitlesTraditionalAbonements);
         return $this;
     }
 
@@ -213,9 +213,9 @@ class TotalTypeAbonementBuilder implements IBuilder
      * @param $totalTitlesAbonementDigitalBLD
      * @return $this
      */
-    public function totalTitlesAbonementDigitalBLD($totalTitlesAbonementDigitalBLD)
+    public function totalTitlesAbonementDigitalBL($totalTitlesAbonementDigitalBLD)
     {
-        $this->totalTypeAbonement->setTotalTitlesAbonementDigitalBLD($totalTitlesAbonementDigitalBLD);
+        $this->totalTypeAbonement->setTotalTitlesDigitalBLD($totalTitlesAbonementDigitalBLD);
         return $this;
     }
 
