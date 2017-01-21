@@ -16,12 +16,6 @@ class TaxationType
      */
     private $value;
 
-
-    public function __construct($value)
-    {
-        $this->value = $value;
-    }
-
     /**
      * @return string
      */

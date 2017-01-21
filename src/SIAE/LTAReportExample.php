@@ -73,12 +73,8 @@ $serializer = JMS\Serializer\SerializerBuilder::create()->build();
 $serializedXML = $serializer->serialize($ltaReport, 'xml');
 echo $serializedXML;
 
-// Test to try it with the provided sample files
-//$serializedXML = file_get_contents("templates/LTA_2015_09_22_001.xml");
-
-
 // Validate against DTD
 $LTAValidator = new \SIAE\validator\LtaValidator();
-echo $LTAValidator->validate($serializedXML);
+$LTAValidator->validate($serializedXML);
 
 ?>

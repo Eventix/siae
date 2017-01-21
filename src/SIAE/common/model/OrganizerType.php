@@ -15,11 +15,6 @@ class OrganizerType
      */
     private $value;
 
-    public function __construct($value)
-    {
-        $this->value = $value;
-    }
-
     /**
      * @return mixed
      */

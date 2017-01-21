@@ -1,10 +1,12 @@
 <?php
 
-namespace SIAE\common\model;
+namespace SIAE\reporting\dailyReport\model;
 
 use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
 use JMS\Serializer\Annotation\XmlAttribute;
+use JMS\Serializer\Annotation\XmlList;
+use SIAE\common\model\TaxationType;
 
 /** @XmlRoot("Abbonamenti") */
 class Abonements
@@ -13,7 +15,10 @@ class Abonements
     private $code;
     /** @SerializedName("Validita") */
     private $validity;
-    /**@SerializedName("TipoTassazione") */
+    /**
+     * @SerializedName("TipoTassazione")
+     * @var TaxationType
+     */
     private $taxationType;
     /** @SerializedName("Turno") */
     private $turn;
@@ -69,7 +74,7 @@ class Abonements
     }
 
     /**
-     * @param mixed $taxationType
+     * @param mixed TaxationType $taxationType
      */
     public function setTaxationType($taxationType)
     {

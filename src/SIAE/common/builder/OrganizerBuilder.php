@@ -6,7 +6,6 @@ namespace SIAE\common\builder;
 use SIAE\common\model\Event;
 use SIAE\common\model\Organizer;
 use SIAE\common\model\OrganizerType;
-use SIAE\common\model\Abonements;
 
 class OrganizerBuilder implements IBuilder
 {
@@ -45,7 +44,7 @@ class OrganizerBuilder implements IBuilder
      * Only for the cinema.
      * Organizer type must be E , P or G.
      * Allowed values: E (essay), P (related to church), G (generic).
-     * @param String $organizerType
+     * @param OrganizerType $organizerType
      * @return OrganizerBuilder
      */
     public function organizerType($organizerType)

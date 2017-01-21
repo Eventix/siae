@@ -24,24 +24,29 @@ class DailyReport
      */
     private $organizer;
 
-    /** @XmlAttribute
+    /**
+     * @XmlAttribute
      * @SerializedName("Data")
      */
     private $date;
-    /** @XmlAttribute
+    /**
+     * @XmlAttribute
      * @SerializedName("DataGenerazione")
      */
     private $creationDate;
-    /** @XmlAttribute
+    /**
+     * @XmlAttribute
      * @SerializedName("OraGenerazione")
      */
     private $generationTime;
-    /** @XmlAttribute
+    /**
+     * @XmlAttribute
      * @SerializedName("ProgressivoGenerazione")
      */
     private $generationIncrementedNumber;
 
-    /** @XmlAttribute
+    /**
+     * @XmlAttribute
      * @SerializedName("Sostituzione")
      */
     private $replacement;

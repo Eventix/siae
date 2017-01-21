@@ -89,12 +89,6 @@ $serializer = JMS\Serializer\SerializerBuilder::create()->build();
 
 // Show
 $serializedXML = $serializer->serialize($transactionLog, 'xml');
-//echo $serializedXML;
-
-// Test to try it with the provided sample files
-// - unfortunately it also fails
-//$serializedXML = file_get_contents("templates/RMG_2015_09_00_001.xml");
-
 echo $serializedXML;
 
 // Validate against DTD

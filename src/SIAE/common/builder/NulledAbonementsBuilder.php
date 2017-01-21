@@ -20,7 +20,7 @@ class NulledAbonementsBuilder implements IBuilder
 
     /**
      * @param mixed $quantity
-     * @return NulledAbonementsBuilder
+     * @return $this NulledAbonementsBuilder
      */
     public function quantity($type)
     {
@@ -30,7 +30,7 @@ class NulledAbonementsBuilder implements IBuilder
 
     /**
      * @param mixed $gross
-     * @return NulledAbonementsBuilder
+     * @return $this NulledAbonementsBuilder
      */
     public function gross($gross)
     {
@@ -40,7 +40,7 @@ class NulledAbonementsBuilder implements IBuilder
 
     /**
      * @param mixed $preSale
-     * @return NulledAbonementsBuilder
+     * @return $this NulledAbonementsBuilder
      */
     public function preSale($preSale)
     {
@@ -50,7 +50,7 @@ class NulledAbonementsBuilder implements IBuilder
 
     /**
      * @param mixed $VATequivalent
-     * @return NulledAbonementsBuilder
+     * @return $this NulledAbonementsBuilder
      */
     public function VATequivalent($VATequivalent)
     {
@@ -60,7 +60,7 @@ class NulledAbonementsBuilder implements IBuilder
 
     /**
      * @param mixed $VATpreSale
-     * @return NulledAbonementsBuilder
+     * @return $this NulledAbonementsBuilder
      */
     public function VATpreSale($VATpreSale)
     {

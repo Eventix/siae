@@ -16,9 +16,15 @@ $multiGenreBuilder = new \SIAE\common\builder\MultipleGenreBuilder();
 $artworkTitleBuilder = new \SIAE\common\builder\ArtworksTitlesBuilder();
 $placeOrderBuilder = new \SIAE\common\builder\PlaceOrderBuilder();
 $ticketSubscriptionBuilder = new \SIAE\common\builder\TicketAbonementsBuilder();
-$abonementBuilder = new \SIAE\common\builder\AbonementBuilder();
+$abonementBuilder = new \SIAE\reporting\dailyReport\builder\AbonementBuilder();
 $releasedSubscriptionsBuilder = new \SIAE\common\builder\IssuedAbonementsBuilder();
 $nulledSubscriptionsBuilder = new \SIAE\common\builder\NulledAbonementsBuilder();
+$taxationTypeBuilder = new \SIAE\common\builder\TaxationTypeBuilder();
+$organizerTypeBuilder = new \SIAE\common\builder\OrganizerTypeBuilder();
+
+$taxationType = $taxationTypeBuilder
+    ->value("S")
+    ->build();
 
 // Start creating the objects from most nested elements
 $artworkTitles = $artworkTitleBuilder
@@ -55,7 +61,6 @@ $place = $placeBuilder
     ->placeCode("0581081135470")
     ->build();
 
-
 $multiGenre = $multiGenreBuilder
     ->genreType(77)
     ->incidenceGenre(100)
@@ -64,21 +69,21 @@ $multiGenre = $multiGenreBuilder
 
 
 $entertainment = $entertainmentBuilder
-    ->taxationType("S")
+    ->taxationType($taxationType)
     ->incidence(0)
     ->build();
 
 // Define one...M placeOrders
-$placeOrders = array(
+$placeOrders = [
     $placeOrderBuilder
         ->code("U2")
         ->capacity(10000)
         ->accessTitle($accessTitles)
         ->build()
-);
+];
 
 // Define one...M events
-$events = array(
+$events = [
     $eventBuilder
         ->entertainment($entertainment)
         ->place($place)
@@ -95,7 +100,7 @@ $events = array(
         ->multipleGenre($multiGenre)
         ->placeOrders($placeOrders)
         ->build()
-);
+];
 
 $releasedSubscriptions = $releasedSubscriptionsBuilder
     ->quantity(4)
@@ -113,11 +118,12 @@ $nulledSubscriptions = $nulledSubscriptionsBuilder
     ->VATpreSale(0)
     ->build();
 
+
 $abonements = [
     $abonementBuilder
         ->code("CODICE ABBONAMENTO")// Code for the Subscription Type (type of Abbo)
         ->validity(20160901)// Clear
-        ->taxationType("")// TODO: Add explanation
+        ->taxationType($taxationType)// TODO: Add explanation
         ->turn("F")
         ->orderCode("UN")// Clear
         ->titleType("I1")// Clear
@@ -126,10 +132,14 @@ $abonements = [
         ->nulledAbonements($nulledSubscriptions)
         ->build()
 ];
+$organizerType =
+    $organizerTypeBuilder
+        ->value("E")
+        ->build();
 
 $organizer = $organizerBuilder
     ->denomination("SALE")
-    ->organizerType("E")// Clear, only need for Cinema
+    ->organizerType($organizerType)// Clear, only need for Cinema
     ->fiscalCode("03566320176")// clear
     ->events($events)
     ->abonements($abonements)
@@ -156,15 +166,9 @@ $serializer = JMS\Serializer\SerializerBuilder::create()->build();
 
 // Show
 $serializedXML = $serializer->serialize($dailyReport, 'xml');
-//echo $serializedXML;
-
-// Test to try it with the provided sample files
-// - unfortunately it also fails
-//$serializedXML = file_get_contents("templates/RMG_2015_09_00_001.xml");
-
 echo $serializedXML;
 
-// TODO make the example pass the DTD validation
+// Validate against DTD
 $dailyReportValidator = new \SIAE\validator\DailyReportValidator();
 $dailyReportValidator->validate($serializedXML);
 

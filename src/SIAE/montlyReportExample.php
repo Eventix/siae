@@ -17,9 +17,15 @@ $multiGenreBuilder = new \SIAE\common\builder\MultipleGenreBuilder();
 $artworkTitleBuilder = new \SIAE\common\builder\ArtworksTitlesBuilder();
 $placeOrderBuilder = new \SIAE\common\builder\PlaceOrderBuilder();
 $ticketSubscriptionBuilder = new \SIAE\common\builder\TicketAbonementsBuilder();
-$subscriptionsBuilder = new \SIAE\common\builder\AbonementBuilder();
+$subscriptionsBuilder = new \SIAE\reporting\monthlyReport\builder\AbonementBuilder();
 $releasedSubscriptionsBuilder = new \SIAE\common\builder\IssuedAbonementsBuilder();
 $nulledSubscriptionsBuilder = new \SIAE\common\builder\NulledAbonementsBuilder();
+$taxationTypeBuilder = new \SIAE\common\builder\TaxationTypeBuilder();
+$organizerTypeBuilder = new \SIAE\common\builder\OrganizerTypeBuilder();
+
+$taxationType = $taxationTypeBuilder
+    ->value("S")
+    ->build();
 
 // Start creating the objects from most nested elements
 $artworkTitles = $artworkTitleBuilder
@@ -65,7 +71,7 @@ $multiGenre = $multiGenreBuilder
 
 
 $entertainment = $entertainmentBuilder
-    ->taxationType("S")
+    ->taxationType($taxationType)
     ->incidence(0)
     ->build();
 
@@ -118,21 +124,26 @@ $nulledSubscriptions = [
 
 $subscriptions = [
     $subscriptionsBuilder
-    ->code("CODICE ABBONAMENTO")
-    ->validity(20160901)
-    ->taxationType("")
-    ->turn("L")
-    ->orderCode("UN")
-    ->titleType("I1")
-    ->amountOfValidatedEvent(1)
-    ->issuedAbonements($releasedSubscriptions)
-    ->nulledAbonements($nulledSubscriptions)
+        ->code("CODICE ABBONAMENTO")
+        ->validity(20160901)
+        ->taxationType($taxationType)
+        ->turn("L")
+        ->orderCode("UN")
+        ->titleType("I1")
+        ->amountOfValidatedEvent(1)
+        ->issuedAbonements($releasedSubscriptions)
+        ->nulledAbonements($nulledSubscriptions)
         ->build()
 ];
 
+$organizerType =
+    $organizerTypeBuilder
+        ->value("E")
+        ->build();
+
 $organizer = $organizerBuilder
     ->denomination("SALE")
-    ->organizerType("E")
+    ->organizerType($organizerType)
     ->fiscalCode("03566320176")
     ->events($events)
     ->abonements($subscriptions)
@@ -162,7 +173,6 @@ $serializedXML = $serializer->serialize($monthlyReport, 'xml');
 echo $serializedXML;
 
 
-// TODO: make the example pass the DTD validation
 // Validate against DTD
 $monthlyReportValidator = new \SIAE\validator\MonthlyReportValidator();
 $monthlyReportValidator->validate($serializedXML);

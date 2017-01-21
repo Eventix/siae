@@ -1,10 +1,12 @@
 <?php
 
-namespace SIAE\common\builder;
+namespace SIAE\reporting\monthlyReport\builder;
 
 
+use SIAE\common\builder\IBuilder;
 use SIAE\common\model\NulledAbonements;
-use SIAE\common\model\Abonements;
+use SIAE\reporting\monthlyReport\model\Abonements;
+use SIAE\common\model\TaxationType;
 use SIAE\common\model\Turn;
 
 class AbonementBuilder implements IBuilder
@@ -62,7 +64,7 @@ class AbonementBuilder implements IBuilder
     /**
      * Accepted values are I (entertainment) or S (of only show).
      * The taxation depends on it.
-     * @param mixed $taxationType
+     * @param mixed TaxationType $taxationType
      * @return $this AbonementsBuilders
      */
     public function taxationType($taxationType)
