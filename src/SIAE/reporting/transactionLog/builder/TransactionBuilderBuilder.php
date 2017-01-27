@@ -60,6 +60,7 @@ class TransactionBuilder implements IBuilder
 
     /**
      * Accepted values are I (entertainment) or S (of only show).
+     * S (default)
      * The taxation depends on it.
      * @param $taxationType
      * @return $this

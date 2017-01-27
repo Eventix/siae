@@ -11,10 +11,32 @@ $ltaEventBuilder = new \SIAE\reporting\dailyTransactionLogs\builder\LTAEventBuil
 $accessTitlesBuilder = new \SIAE\reporting\dailyTransactionLogs\builder\AccessTitleBuilder();
 $supportBuilder = new \SIAE\reporting\dailyTransactionLogs\builder\SupportBuilder();
 
-
+// Issued
 $accessTitles = [
     $accessTitlesBuilder
-        ->issueSystem("P0001091") // TicketX
+        ->issueSystem("P0001091") // TODO: difference between: SistemaEmissione, CFTitolareCA
+        ->activationCard("A0104726") // SmartCard used.
+        ->autoIncrementedFiscalNumber("192") // Increment counter from SmartCard.
+        ->fiscalSigilloCode("716639DB711B9AD7") // Fiscal number from SmartCard.
+        ->issuedDate(20150922) // clear
+        ->issuedTime(1239) // clear
+        ->ltaDate(20150922) // clear
+        ->ltaTime(1239)  // clear
+        ->titleType("I1") // clear
+        ->orderCode("UN") // section the ticket belongs to // TODO: What should this be for non-seated
+        ->gross("0") // Ticket price without service fees, price for organisation
+        ->abonement("N") // If ticket belongs to abonement
+        ->isNulled("N") // is cancelled or not (S, yes; N, no)
+        ->supportCode("BT") // See Supports
+        ->supportId("34259841043610000002") // Actual Barcode
+        ->state("VT")
+        ->build()
+];
+
+// Cancelled / Refunded
+$accessTitles = [
+    $accessTitlesBuilder
+        ->issueSystem("P0001091")
         ->activationCard("A0104726")
         ->autoIncrementedFiscalNumber("192")
         ->fiscalSigilloCode("716639DB711B9AD7")
@@ -24,43 +46,43 @@ $accessTitles = [
         ->ltaTime(1239)
         ->titleType("01")
         ->orderCode("UN")
-        ->gross("0")
+        ->gross("0") // refunded amount probably
         ->abonement("N")
-        ->isNulled("N")
+        ->isNulled("S") // changed
         ->supportCode("BT")
         ->supportId("34259841043610000002")
-        ->state("VT")
+        ->state("AD") // Changed
         ->build()
 ];
 
 $supports = [
     $supportBuilder
-        ->supportIdCode("BIGLIETTO TRADIZIONALE")
-        ->supportTypeId("BT")
+        ->supportIdCode("BIGLIETTO TRADIZIONALE") // says: traditional ticket (user input for each ticket) / Ticket name?
+        ->supportTypeId("BT") // TODO: What kind of options we have here? (user input for each ticket)
         ->build(),
     $supportBuilder
-        ->supportIdCode("CARTA FIDELIZZAZIONE")
+        ->supportIdCode("CARTA FIDELIZZAZIONE") // TODO: ask this
         ->supportTypeId("FI")
         ->build(),
 ];
 
 
 $ltaEvent = $ltaEventBuilder
-    ->cfOrganizer("03566320176")
-    ->localCode("0581081135470")
-    ->eventDate("20150922")
-    ->eventHour("0915")
-    ->title("Rainbow Magicland")
-    ->genreType("77")
-    ->openingDate("20150922")
-    ->openingHour("0615")
+    ->cfOrganizer("03566320176") // Fiscal Code assigned to the organizer (user input)
+    ->localCode("0581081135470") // SIAE code assigned to the specific location (user input)
+    ->eventDate("20150922") // clear
+    ->eventHour("0915") // Clear
+    ->title("Rainbow Magicland") // clear
+    ->genreType("77") // Event specific setting (user input)
+    ->openingDate("20150922") // clear
+    ->openingHour("0615") // celar
     ->accessTitles($accessTitles)
     ->supports($supports)
     ->build();
 
 $ltaReport = $ltaBuilder
-    ->CACFOwner("P0001891")
-    ->CASystem("02014780395")
+    ->CACFOwner("P0001891") // SIAE code for issueing ticketsystem CFTitolareCA (WL input)
+    ->CASystem("02014780395") // SIAE code SistemaCA (WL input)
     ->transactionLogDate("20150922")
     ->ltaEvent($ltaEvent)
     ->build();
