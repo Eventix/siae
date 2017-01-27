@@ -38,6 +38,7 @@ class DailyTransactionLogBuilder implements IBuilder
 
     /**
      * System CA code.
+     * Control access for the Whitelabel.
      * @param $CASystem
      * @return $this
      */

@@ -87,7 +87,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
-     * Date at which this was insterted in "ListaTitoliEmessi" - "released titles list"
+     * Date at which the current report was generated "ListaTitoliEmessi" - "released titles list"
      * Format is YYYYMMDD
      * @param $ltaDate
      * @return $this
@@ -99,7 +99,7 @@ class AccessTitleBuilder implements IBuilder
     }
 
     /**
-     * Time at which this was inserted in
+     * Time at which the the current report was created
      * "ListaTitoliEmessi" - "released titles list"
      * Format is HHMMSS
      * @param $ltaTime
@@ -113,7 +113,7 @@ class AccessTitleBuilder implements IBuilder
 
     /**
      * Allowed values:
-     * I1 - Intero
+     * I1 - Intero, (whole/full price) (default)
      * MC - Meseum Card
      * TC - Tourist Card
      * Find out more in the TAB 3.
@@ -300,7 +300,7 @@ class AccessTitleBuilder implements IBuilder
 
 
     /**
-     * Code on the medium (ticket/mobile phone) presented at the access control.
+     * Code on the medium (ticket/mobile phone) presented at the access control. (barcode)
      * @param $supportId
      * @return $this
      */
@@ -314,7 +314,7 @@ class AccessTitleBuilder implements IBuilder
     /**
      * State title. The values allowed are the followings:
      * VT = Valid (titolo tradizionale)
-     * VD = Valid (titolo digitale)
+     * VD = Valid (titolo digitale) (default)
      * ZT = Accesso automatizz. tit. tradizionale
      * ZD = Accesso automatizzato digitale
      * MT = Accesso Manuale tit. tradizionale
@@ -324,7 +324,7 @@ class AccessTitleBuilder implements IBuilder
      * FT = Denuncia furto per tit. tradizionale
      * FD = Denuncia furto per tit. digitale
      * AT = Annullato tit. tradizionale
-     * AD = Annullato tit. digitale
+     * AD = Annullato tit. digitale (default for refund)
      * BT = Black List a disposizione dell’organizzatore per tit.
      * tradizionali
      * BD = Black list a disposizione dell’organizzatore per tit. digitali
