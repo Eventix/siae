@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RiepilogoGiornaliero Data="%_NAME_%" DataGenerazione="%_DATAGENERAZIONE_%" OraGenerazione="150057" ProgressivoGenerazione="14" Sostituzione="N">
+    <Titolare>
+        <Denominazione>ARTA COM SRL</Denominazione>
+        <CodiceFiscale>02014780395</CodiceFiscale>
+        <SistemaEmissione>P0001091</SistemaEmissione>
+    </Titolare>
+    <Organizzatore>
+        <Denominazione>%_ORGANIZZATORE_DENOMINAZIONE_%</Denominazione>
+        <CodiceFiscale>03566320176</CodiceFiscale>
+        <TipoOrganizzatore valore="G"/>
+        <Evento>
+            <Intrattenimento>
+                <TipoTassazione valore="S"/>
+                <Incidenza>0</Incidenza>
+            </Intrattenimento>
+            <Locale>
+                <Denominazione>%_ORGANIZZATORE_EVENTO_LOCALE_DENOMINAZIONE_%</Denominazione>
+                <CodiceLocale>0581081135470</CodiceLocale>
+            </Locale>
+            <DataEvento>20150922</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <MultiGenere>
+                <TipoGenere>77</TipoGenere>
+                <IncidenzaGenere>100</IncidenzaGenere>
+                <TitoliOpere>
+                    <Titolo>Rainbow Magicland</Titolo>
+                    <Autore>Rainbow Magicland</Autore>
+                    <Esecutore>Rainbow Magicland Spa</Esecutore>
+                </TitoliOpere>
+            </MultiGenere>
+            <OrdineDiPosto>
+                <CodiceOrdine>U2</CodiceOrdine>
+                <Capienza>10000</Capienza>
+                <TitoliAccesso>
+                    <TipoTitolo>R1</TipoTitolo>
+                    <Quantita>3</Quantita>
+                    <CorrispettivoLordo>2400</CorrispettivoLordo>
+                    <Prevendita>0</Prevendita>
+                    <IVACorrispettivo>219</IVACorrispettivo>
+                    <IVAPrevendita>0</IVAPrevendita>
+                    <ImportoPrestazione>0</ImportoPrestazione>
+                </TitoliAccesso>
+            </OrdineDiPosto>
+            <OrdineDiPosto>
+                <CodiceOrdine>UN</CodiceOrdine>
+                <Capienza>25000</Capienza>
+                <TitoliAccesso>
+                    <TipoTitolo>I1</TipoTitolo>
+                    <Quantita>3</Quantita>
+                    <CorrispettivoLordo>4500</CorrispettivoLordo>
+                    <Prevendita>0</Prevendita>
+                    <IVACorrispettivo>408</IVACorrispettivo>
+                    <IVAPrevendita>0</IVAPrevendita>
+                    <ImportoPrestazione>0</ImportoPrestazione>
+                </TitoliAccesso>
+                <BigliettiAbbonamento>
+                    <CodiceFiscale>03566320176</CodiceFiscale>
+                    <CodiceAbbonamento>0004UNI1</CodiceAbbonamento>
+                    <TipoTitolo>I1</TipoTitolo>
+                    <Quantita>4</Quantita>
+                    <ImportoFigurativo>8000</ImportoFigurativo>
+                    <IVAFigurativa>728</IVAFigurativa>
+                </BigliettiAbbonamento>
+            </OrdineDiPosto>
+        </Evento>
+        <Evento>
+            <Intrattenimento>
+                <TipoTassazione valore="S"/>
+                <Incidenza>0</Incidenza>
+            </Intrattenimento>
+            <Locale>
+                <Denominazione>Rainbow Magicland</Denominazione>
+                <CodiceLocale>0581081135470</CodiceLocale>
+            </Locale>
+            <DataEvento>20150923</DataEvento>
+            <OraEvento>0915</OraEvento>
+            <MultiGenere>
+                <TipoGenere>77</TipoGenere>
+                <IncidenzaGenere>100</IncidenzaGenere>
+                <TitoliOpere>
+                    <Titolo>Rainbow Magicland</Titolo>
+                    <Autore>Rainbow Magicland</Autore>
+                    <Esecutore>Rainbow Magicland Spa</Esecutore>
+                </TitoliOpere>
+            </MultiGenere>
+            <OrdineDiPosto>
+                <CodiceOrdine>U2</CodiceOrdine>
+                <Capienza>10000</Capienza>
+                <TitoliAccesso>
+                    <TipoTitolo>I1</TipoTitolo>
+                    <Quantita>3</Quantita>
+                    <CorrispettivoLordo>3600</CorrispettivoLordo>
+                    <Prevendita>0</Prevendita>
+                    <IVACorrispettivo>327</IVACorrispettivo>
+                    <IVAPrevendita>0</IVAPrevendita>
+                    <ImportoPrestazione>0</ImportoPrestazione>
+                </TitoliAccesso>
+            </OrdineDiPosto>
+            <OrdineDiPosto>
+                <CodiceOrdine>UN</CodiceOrdine>
+                <Capienza>25000</Capienza>
+                <TitoliAccesso>
+                    <TipoTitolo>I1</TipoTitolo>
+                    <Quantita>3</Quantita>
+                    <CorrispettivoLordo>4500</CorrispettivoLordo>
+                    <Prevendita>0</Prevendita>
+                    <IVACorrispettivo>408</IVACorrispettivo>
+                    <IVAPrevendita>0</IVAPrevendita>
+                    <ImportoPrestazione>0</ImportoPrestazione>
+                </TitoliAccesso>
+            </OrdineDiPosto>
+        </Evento>
+        <Abbonamenti>
+            <CodiceAbbonamento>%_CODICEABBONAMENTO_%</CodiceAbbonamento>
+            <Validita>20160901</Validita>
+            <TipoTassazione valore="S"/>
+            <Turno valore="L"/>
+            <CodiceOrdine>UN</CodiceOrdine>
+            <TipoTitolo>I1</TipoTitolo>
+            <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+            <AbbonamentiEmessi>
+                <Quantita>4</Quantita>
+                <CorrispettivoLordo>12000</CorrispettivoLordo>
+                <Prevendita>0</Prevendita>
+                <IVACorrispettivo>1092</IVACorrispettivo>
+                <IVAPrevendita>0</IVAPrevendita>
+            </AbbonamentiEmessi>
+            <AbbonamentiAnnullati>
+                <Quantita>1</Quantita>
+                <CorrispettivoLordo>3000</CorrispettivoLordo>
+                <Prevendita>0</Prevendita>
+                <IVACorrispettivo>273</IVACorrispettivo>
+                <IVAPrevendita>0</IVAPrevendita>
+            </AbbonamentiAnnullati>
+        </Abbonamenti>
+    </Organizzatore>
+    <Abbonamenti>
+        <CodiceAbbonamento>%_CODICEABBONAMENTO_%</CodiceAbbonamento>
+        <Validita>20160901</Validita>
+        <TipoTassazione valore="S"/>
+        <Turno valore="L"/>
+        <CodiceOrdine>UN</CodiceOrdine>
+        <TipoTitolo>I1</TipoTitolo>
+        <QuantitaEventiAbilitati>1</QuantitaEventiAbilitati>
+        <AbbonamentiEmessi>
+            <Quantita>4</Quantita>
+            <CorrispettivoLordo>12000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>1092</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </AbbonamentiEmessi>
+        <AbbonamentiAnnullati>
+            <Quantita>1</Quantita>
+            <CorrispettivoLordo>3000</CorrispettivoLordo>
+            <Prevendita>0</Prevendita>
+            <IVACorrispettivo>273</IVACorrispettivo>
+            <IVAPrevendita>0</IVAPrevendita>
+        </AbbonamentiAnnullati>
+    </Abbonamenti>
+
+</RiepilogoGiornaliero>

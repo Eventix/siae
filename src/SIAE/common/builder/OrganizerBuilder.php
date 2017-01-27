@@ -6,7 +6,7 @@ namespace SIAE\common\builder;
 use SIAE\common\model\Event;
 use SIAE\common\model\Organizer;
 use SIAE\common\model\OrganizerType;
-use SIAE\common\model\Subscriptions;
+use SIAE\common\model\Abonements;
 
 class OrganizerBuilder implements IBuilder
 {
@@ -22,12 +22,12 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
-     * @param mixed $classification
+     * @param mixed $denomination
      * @return OrganizerBuilder
      */
-    public function classification($classification)
+    public function denomination($denomination)
     {
-        $this->organizer->setClassification($classification);
+        $this->organizer->setDenomination($denomination);
         return $this;
     }
 
@@ -42,6 +42,9 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
+     * Only for the cinema.
+     * Organizer type must be E , P or G.
+     * Allowed values: E (essay), P (related to church), G (generic).
      * @param String $organizerType
      * @return OrganizerBuilder
      */
@@ -62,17 +65,17 @@ class OrganizerBuilder implements IBuilder
     }
 
     /**
-     * @param Subscriptions[] $subscriptions
+     * Abbonamenti children element
+     * @param Abonements[] $abonements
      * @return OrganizerBuilder
      */
-    public function subscriptions($subscriptions)
+    public function abonements($abonements)
     {
-        $this->organizer->setSubscriptions($subscriptions);
+        $this->organizer->setAbonements($abonements);
         return $this;
     }
 
     /**
-     * @return Object returns the newly built object
      * @return Organizer
      */
     public function build()

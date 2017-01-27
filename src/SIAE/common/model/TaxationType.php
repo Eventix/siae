@@ -23,7 +23,7 @@ class TaxationType
     }
 
     /**
-     * @return mixed
+     * @return string
      */
     public function getValue()
     {
@@ -31,7 +31,7 @@ class TaxationType
     }
 
     /**
-     * @param mixed $value
+     * @param string $value
      */
     public function setValue($value)
     {

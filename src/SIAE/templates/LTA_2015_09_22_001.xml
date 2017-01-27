@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<LTA_Giornaliera SistemaCA="P0001891" CFTitolareCA="02014780395" DataLTA="20150922">
+    <LTA_Evento CFOrganizzatore="03566320176" CodiceLocale="0581081135470" DataEvento="20150922" OraEvento="0915"
+                Titolo="Rainbow Magicland" TipoGenere="77" DataApertura="20150922" OraApertura="0615">
+        <Supporto TipoSupportoId="BIGLIETTO TRADIZIONALE" CodSupportoId="BT"/>
+        <Supporto TipoSupportoId="CARTA FIDELIZZAZIONE" CodSupportoId="FI"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="192"
+                       SigilloFiscale="716639DB711B9AD7" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="O1" CodiceOrdine="UN" CorrispettivoLordo="0" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259841043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="193"
+                       SigilloFiscale="189D80C002E63172" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="O1" CodiceOrdine="UN" CorrispettivoLordo="0" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259842043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="194"
+                       SigilloFiscale="9B868708C2E965D0" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="1500" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259843043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="195"
+                       SigilloFiscale="538D81D765859BF0" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="1500" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259844043610000002" Stato="ZT"
+                       DataIngresso="20150922" OraIngresso="1312"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="196"
+                       SigilloFiscale="C1A2F7969AEBFBF9" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="1500" Abbonamento="N"
+                       Annullamento="S" DataANN="20150922" OraANN="1302" CartaAttivazioneANN="A0104726"
+                       ProgressivoFiscaleANN="231" SigilloFiscaleANN="DFB6FF09CBFDFB8F" CodSupporto="BT"
+                       IdSupporto="34259845043610000002" Stato="AT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="197"
+                       SigilloFiscale="A1E34E4E8567E40B" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="1500" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259846043610000002" Stato="ZT"
+                       DataIngresso="20150922" OraIngresso="1311"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="198"
+                       SigilloFiscale="1B99BE3FFDDC439D" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="R1" CodiceOrdine="UN" CorrispettivoLordo="1000" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259847043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="199"
+                       SigilloFiscale="37EE047BBBA2C6EB" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="R1" CodiceOrdine="UN" CorrispettivoLordo="1000" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259848043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="200"
+                       SigilloFiscale="CF2FFA3BE33F00B4" DataEmissione="20150922" OraEmissione="1239" DataLTA="20150922"
+                       OraLTA="1239" TipoTitolo="R1" CodiceOrdine="UN" CorrispettivoLordo="1000" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259849043610000002" Stato="ZT"
+                       DataIngresso="20150922" OraIngresso="1311"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="201"
+                       SigilloFiscale="EB4FF2EAA2654D28" DataEmissione="20150922" OraEmissione="1240" DataLTA="20150922"
+                       OraLTA="1240" TipoTitolo="I1" CodiceOrdine="U2" CorrispettivoLordo="1200" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259850043610000002" Stato="ZT"
+                       DataIngresso="20150922" OraIngresso="1307"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="202"
+                       SigilloFiscale="2A0D77BADA96C6CE" DataEmissione="20150922" OraEmissione="1240" DataLTA="20150922"
+                       OraLTA="1240" TipoTitolo="I1" CodiceOrdine="U2" CorrispettivoLordo="1200" Abbonamento="N"
+                       Annullamento="N" CodSupporto="BT" IdSupporto="34259851043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="203"
+                       SigilloFiscale="A14D9993E00053D1" DataEmissione="20150922" OraEmissione="1241" DataLTA="20150922"
+                       OraLTA="1241" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="3000" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0005UNI1" QEventiAbilitati="3" Annullamento="S"
+                       DataANN="20150922" OraANN="1302" CartaAttivazioneANN="A0104726" ProgressivoFiscaleANN="230"
+                       SigilloFiscaleANN="553D4396942BD3A4" CodSupporto="BT" IdSupporto="34259852043610000002"
+                       Stato="AT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="204"
+                       SigilloFiscale="E3465A7E4C30D262" DataEmissione="20150922" OraEmissione="1241" DataLTA="20150922"
+                       OraLTA="1241" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="3000" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0005UNI1" QEventiAbilitati="3" Annullamento="N"
+                       CodSupporto="BT" IdSupporto="34259853043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="205"
+                       SigilloFiscale="7EC2CB3C3E0E5BDE" DataEmissione="20150922" OraEmissione="1241" DataLTA="20150922"
+                       OraLTA="1241" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="3000" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0005UNI1" QEventiAbilitati="3" Annullamento="N"
+                       CodSupporto="BT" IdSupporto="34259854043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="206"
+                       SigilloFiscale="D3B6B84868058F9A" DataEmissione="20150922" OraEmissione="1241" DataLTA="20150922"
+                       OraLTA="1241" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="3000" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0005UNI1" QEventiAbilitati="3" Annullamento="N"
+                       CodSupporto="BT" IdSupporto="34259855043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="207"
+                       SigilloFiscale="00D6A9E260380062" DataEmissione="20150922" OraEmissione="1241" DataLTA="20150922"
+                       OraLTA="1241" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="3000" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0005UNI1" QEventiAbilitati="3" Annullamento="N"
+                       CodSupporto="BT" IdSupporto="34259856043610000002" Stato="VT"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="216"
+                       SigilloFiscale="5E9FA76370DFA6BB" DataEmissione="20150922" OraEmissione="1249" DataLTA="20150922"
+                       OraLTA="1249" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="1500" Abbonamento="N"
+                       Annullamento="N" CodSupporto="FI" IdSupporto="000000000021" Stato="ZD" DataIngresso="20150922"
+                       OraIngresso="1304"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="217"
+                       SigilloFiscale="1A5993EB8C4351F3" DataEmissione="20150922" OraEmissione="1251" DataLTA="20150922"
+                       OraLTA="1251" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="1500" Abbonamento="N"
+                       Annullamento="S" DataANN="20150922" OraANN="1300" CartaAttivazioneANN="A0104726"
+                       ProgressivoFiscaleANN="225" SigilloFiscaleANN="DD43A2751C611FC0" CodSupporto="FI"
+                       IdSupporto="000000000022" Stato="AD"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="218"
+                       SigilloFiscale="8C142A753864A997" DataEmissione="20150922" OraEmissione="1253" DataLTA="20150922"
+                       OraLTA="1253" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="1500" Abbonamento="N"
+                       Annullamento="N" CodSupporto="FI" IdSupporto="000000000023" Stato="ZD" DataIngresso="20150922"
+                       OraIngresso="1306"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="219"
+                       SigilloFiscale="5C0FA6AC0B7621D9" DataEmissione="20150922" OraEmissione="1254" DataLTA="20150922"
+                       OraLTA="1254" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="3000" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0005UNI1" QEventiAbilitati="3" Annullamento="N"
+                       CodSupporto="FI" IdSupporto="000000000024" Stato="ZD" DataIngresso="20150922"
+                       OraIngresso="1308"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="220"
+                       SigilloFiscale="C1BF36882C80AFF9" DataEmissione="20150922" OraEmissione="1255" DataLTA="20150922"
+                       OraLTA="1255" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="3000" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0005UNI1" QEventiAbilitati="3" Annullamento="S"
+                       DataANN="20150922" OraANN="1300" CartaAttivazioneANN="A0104726" ProgressivoFiscaleANN="227"
+                       SigilloFiscaleANN="D80C7D8CBB4862B3" CodSupporto="FI" IdSupporto="000000000025" Stato="AD"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="232"
+                       SigilloFiscale="6B0C310368DFF9C4" DataEmissione="20150922" OraEmissione="1307" DataLTA="20150922"
+                       OraLTA="1307" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="0" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0003UNI1" ProgressivoAbbonamento="13"
+                       QEventiAbilitati="1" Annullamento="N" CodSupporto="FI" IdSupporto="000000000026" Stato="ZD"
+                       DataIngresso="20150922" OraIngresso="1307"/>
+        <TitoloAccesso SistemaEmissione="P0001091" CartaAttivazione="A0104726" ProgressivoFiscale="233"
+                       SigilloFiscale="C056E6B115D4179B" DataEmissione="20150922" OraEmissione="1308" DataLTA="20150922"
+                       OraLTA="1308" TipoTitolo="I1" CodiceOrdine="UN" CorrispettivoLordo="0" Abbonamento="S"
+                       CFAbbonamento="03566320176" CodiceAbbonamento="0004UNI1" ProgressivoAbbonamento="12"
+                       QEventiAbilitati="3" Annullamento="N" CodSupporto="FI" IdSupporto="000000000028" Stato="ZD"
+                       DataIngresso="20150922" OraIngresso="1308"/>
+    </LTA_Evento>
+</LTA_Giornaliera>

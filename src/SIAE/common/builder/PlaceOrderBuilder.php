@@ -48,12 +48,23 @@ class PlaceOrderBuilder implements IBuilder
     }
 
     /**
-     * @param mixed $subscriptionTicket
+     * @param mixed $abonementTicket
      * @return $this PlaceOrderBuilder
      */
-    public function subscriptionTicket($subscriptionTicket)
+    public function abonementTicket($abonementTicket)
     {
-        $this->subscriptionTicket = $subscriptionTicket;
+        $this->placeOrder->setAbonementTicket($abonementTicket);
+        return $this;
+    }
+
+    /**
+     * @param $VATExceedingOffers
+     * @return $this
+     */
+    public function VATExceedingOffers($VATExceedingOffers)
+    {
+        $this->placeOrder->setVATExceedingOffers($VATExceedingOffers);
+        return $this;
     }
 
 

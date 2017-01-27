@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+        <!ENTITY % text "(#PCDATA)">
+        <!ELEMENT LTA_Giornaliera (LTA_Evento+)>
+        <!ATTLIST LTA_Giornaliera
+                SistemaCA        CDATA #REQUIRED
+                CFTitolareCA        CDATA #REQUIRED
+                DataLTA        CDATA #REQUIRED
+                >
+        <!ELEMENT LTA_Evento (Supporto+, TitoloAccesso*)>
+        <!ATTLIST LTA_Evento
+                CFOrganizzatore    CDATA #REQUIRED
+                CodiceLocale        CDATA #REQUIRED
+                DataEvento        CDATA #REQUIRED
+                OraEvento        CDATA #REQUIRED
+                Titolo            CDATA #REQUIRED
+                TipoGenere        CDATA #REQUIRED
+                DataApertura        CDATA #REQUIRED
+                OraApertura        CDATA #REQUIRED
+                >
+        <!ELEMENT Supporto EMPTY>
+        <!ATTLIST Supporto
+                TipoSupportoId        CDATA #REQUIRED
+                CodSupportoId        CDATA #REQUIRED
+                >
+        <!ELEMENT TitoloAccesso (Partecipante?)>
+        <!ATTLIST TitoloAccesso
+                SistemaEmissione    CDATA #REQUIRED
+                CartaAttivazione    CDATA #REQUIRED
+                ProgressivoFiscale    CDATA #REQUIRED
+                SigilloFiscale        CDATA #REQUIRED
+                DataEmissione        CDATA #REQUIRED
+                OraEmissione        CDATA #REQUIRED
+                DataLTA        CDATA #REQUIRED
+                OraLTA            CDATA #REQUIRED
+                TipoTitolo        CDATA #REQUIRED
+                CodiceOrdine        CDATA #REQUIRED
+                CorrispettivoLordo    CDATA #REQUIRED
+                Posto            CDATA #IMPLIED
+                Abbonamento        (S | N) "N"
+                CFAbbonamento        CDATA #IMPLIED
+                CodiceAbbonamento    CDATA #IMPLIED
+                ProgressivoAbbonamento    CDATA #IMPLIED
+                QEventiAbilitati    CDATA #IMPLIED
+                Annullamento        (S | N) "N"
+                DataANN        CDATA #IMPLIED
+                OraANN            CDATA #IMPLIED
+                CartaAttivazioneANN    CDATA #IMPLIED
+                ProgressivoFiscaleANN    CDATA #IMPLIED
+                SigilloFiscaleANN    CDATA #IMPLIED
+                CodSupporto        CDATA #REQUIRED
+                IdSupporto        CDATA #REQUIRED
+                IdSupAlt        CDATA #IMPLIED
+                Stato            CDATA #REQUIRED
+                DataIngresso        CDATA #IMPLIED
+                OraIngresso        CDATA #IMPLIED
+                >
+        <!ELEMENT Partecipante (Nome, Cognome, DataNascita, LuogoNascita)>
+        <!ELEMENT Nome ANY>
+        <!ELEMENT Cognome ANY>
+        <!ELEMENT DataNascita ANY>
+        <!ELEMENT LuogoNascita ANY>

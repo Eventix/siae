@@ -42,6 +42,7 @@ class EventBuilder implements IBuilder
     }
 
     /**
+     * Format is YYYYMMDD.
      * @param mixed $eventDate
      * @return EventBuilder
      */
@@ -52,6 +53,7 @@ class EventBuilder implements IBuilder
     }
 
     /**
+     * Format is HHMM.
      * @param mixed $eventTime
      * @return EventBuilder
      */

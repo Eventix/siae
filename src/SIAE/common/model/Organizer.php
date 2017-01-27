@@ -10,32 +10,34 @@ use JMS\Serializer\Annotation\XmlList;
 class Organizer
 {
     /** @SerializedName("Denominazione") */
-    private $classification;
+    private $denomination;
     /** @SerializedName("CodiceFiscale") */
     private $fiscalCode;
-    /** @SerializedName("TipoGenere") */
+    /** @SerializedName("TipoOrganizzatore") */
     private $organizerType;
     /**
      * @XmlList(inline = true, entry="Evento")
      */
     private $events;
-    /** @SerializedName("Abbonamenti") */
-    private $subscriptions;
+    /**
+     * @XmlList(inline = true, entry="Abbonamenti")
+     */
+    private $abonements;
 
     /**
      * @return mixed
      */
-    public function getClassification()
+    public function getDenomination()
     {
-        return $this->classification;
+        return $this->denomination;
     }
 
     /**
-     * @param mixed $classification
+     * @param mixed $denomination
      */
-    public function setClassification($classification)
+    public function setDenomination($denomination)
     {
-        $this->classification = $classification;
+        $this->denomination = $denomination;
     }
 
     /**
@@ -63,6 +65,8 @@ class Organizer
     }
 
     /**
+     * Only for the cinema.
+     * Allowed values: E (essay), P (related to church), G (generic).
      * @param String $organizerType
      */
     public function setOrganizerType($organizerType)
@@ -89,16 +93,19 @@ class Organizer
     /**
      * @return mixed
      */
-    public function getSubscriptions()
+    public function getAbonements()
     {
-        return $this->subscriptions;
+        return $this->abonements;
     }
 
     /**
-     * @param mixed $subscriptions
+     * Abonements are a set of information on
+     *
+     *
+     * @param mixed $abonements
      */
-    public function setSubscriptions($subscriptions)
+    public function setAbonements($abonements)
     {
-        $this->subscriptions = $subscriptions;
+        $this->abonements = $abonements;
     }
 }
