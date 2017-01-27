@@ -1,18 +1,22 @@
 {
-    "name": "eventix/siae",
-    "description": "Generating reports for SIAE",
-    "authors": [
-        {
-            "name": "Chris de Jong",
-            "email": "Chris@eventix.nl"
-        }
-    ],
-    "require": {
-        "php": ">=5.3.0"
-    },
-    "autoload": {
-        "psr-0": {
-            "SIAE": "src/"
-        }
+  "name": "eventix/siae",
+  "description": "Generating reports for SIAE",
+  "authors": [
+    {
+      "name": "Chris de Jong",
+      "email": "Chris@eventix.nl"
     }
+  ],
+  "require": {
+    "php": ">=5.3.0",
+    "symfony/serializer": "*",
+    "symfony/property-access": "*",
+    "jms/serializer": "*",
+    "phpunit/phpunit": "*"
+  },
+  "autoload": {
+    "psr-0": {
+      "SIAE": "src/"
+    }
+  }
 }
