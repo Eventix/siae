@@ -174,5 +174,13 @@ class AccessTitleBuilder
         return $this;
     }
 
+    /**
+     * @return AccessTitle returns the newly built accesTitle
+     */
+    public function build()
+    {
+        return $this->accessTitle;
+    }
+
 
 }

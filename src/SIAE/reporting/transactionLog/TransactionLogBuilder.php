@@ -1,6 +1,6 @@
 <?php
 
-namespace SIAE\reporting\transactionLogs;
+namespace SIAE\reporting\transactionLog;
 
 /**
  * Builder for the LTA SIAE XML mapping.
@@ -27,5 +27,13 @@ class TransactionLogBuilder
     {
         $this->transactionLog->setTransactions($transactions);
         return $this;
+    }
+
+    /**
+     * @return TransactionLog returns the newly built TransactionLog
+     */
+    public function build()
+    {
+        return $this->transactionLog;
     }
 }

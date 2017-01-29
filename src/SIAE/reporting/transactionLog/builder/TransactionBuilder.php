@@ -39,6 +39,7 @@ class TransactionBuilder implements IBuilder
     public function cfOwner($CFOwner)
     {
         $this->transaction->setCFOwner($CFOwner);
+        return $this;
     }
 
 
@@ -55,6 +56,7 @@ class TransactionBuilder implements IBuilder
     public function VATreleased($VATreleased)
     {
         $this->transaction->setVATreleased($VATreleased);
+        return $this;
     }
 
 

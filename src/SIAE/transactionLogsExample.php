@@ -2,7 +2,6 @@
 
 require_once "autoload.php";
 
-
 $abonementBuilder = new \SIAE\reporting\transactionLog\builder\AbonementBuilder();
 $accessTitleBuilder = new \SIAE\reporting\transactionLog\builder\AccessTitleBuilder();
 $complementaryBuilder = new \SIAE\reporting\transactionLog\builder\ComplementaryBuilder();
