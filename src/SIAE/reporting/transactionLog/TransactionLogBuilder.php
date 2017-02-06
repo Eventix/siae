@@ -7,7 +7,7 @@ use SIAE\common\builder\IBuilder;
 /**
  * Builder for the LTA SIAE XML mapping.
  * Log containing all the transactions in relation to the
- * the tickets sold.
+ * the tickets sold and nulled.
  */
 class TransactionLogBuilder implements IBuilder
 {

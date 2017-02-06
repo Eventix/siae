@@ -267,7 +267,8 @@ class TransactionBuilder implements IBuilder
     }
 
     /**
-     * // TODO ask regoli
+     * Refers to the further smartcard used to null the transaction.
+     * Two smartcards need to be in place.
      * @param $nulledOriginalCard
      * @return $this
      */
@@ -279,7 +280,13 @@ class TransactionBuilder implements IBuilder
 
 
     /**
-     * // TODO ask regoli
+     * Code to explain why the transaction was nulled.
+     * Pick one of the following:
+     * 001 - Wrong details provided
+     * 002 - Print error
+     * 003 - Transaction incomplete
+     * 004 - Nulled on client request
+     * 005 - Nulled for internal reasons
      * @param $nulledCausal
      * @return $this
      */
