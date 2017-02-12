@@ -4,6 +4,7 @@ namespace SIAE\reporting\transactionLog\model;
 
 use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
+use JMS\Serializer\Annotation\XmlAttribute;
 
 /** @XmlRoot("BigliettoAbbonamento") */
 class TicketAbonement

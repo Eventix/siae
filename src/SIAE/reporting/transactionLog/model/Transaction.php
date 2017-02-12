@@ -5,6 +5,7 @@ namespace SIAE\reporting\transactionLog\model;
 use SIAE\reporting\dailyTransactionLogs\model\AccessTitle;
 use JMS\Serializer\Annotation\XmlRoot;
 use JMS\Serializer\Annotation\SerializedName;
+use JMS\Serializer\Annotation\XmlAttribute;
 
 /** @XmlRoot("Transazione") */
 class Transaction
@@ -173,6 +174,7 @@ class Transaction
      */
     public function setCFOrganizer($CFOrganizer)
     {
+        debug_print_backtrace(0, 3  );
         $this->CFOrganizer = $CFOrganizer;
     }
 
