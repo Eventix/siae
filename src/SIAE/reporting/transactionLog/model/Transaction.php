@@ -174,7 +174,6 @@ class Transaction
      */
     public function setCFOrganizer($CFOrganizer)
     {
-        debug_print_backtrace(0, 3  );
         $this->CFOrganizer = $CFOrganizer;
     }
 
